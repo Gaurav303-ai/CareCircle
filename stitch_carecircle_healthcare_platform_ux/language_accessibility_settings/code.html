@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#e8fef5", "surface-container-low": "#e2f9ef", "secondary": "#006b54", "tertiary-fixed": "#e1e0ff", "on-error-container": "#93000a", "on-surface-variant": "#3e4944", "on-tertiary-fixed-variant": "#2f2ebe", "on-primary-fixed-variant": "#00513f", "on-secondary-container": "#007259", "primary-fixed-dim": "#81d7ba", "inverse-surface": "#21342e", "background": "#e8fef5", "surface-dim": "#c9dfd6", "on-primary-fixed": "#002118", "on-primary": "#ffffff", "primary": "#005b47", "primary-container": "#13755d", "on-primary-container": "#a1f8da", "secondary-container": "#87f7d2", "on-tertiary-container": "#e7e5ff", "on-tertiary-fixed": "#07006c", "surface-container-highest": "#d1e7de", "on-background": "#0c1f1a", "surface-container-lowest": "#ffffff", "tertiary-container": "#5355e0", "outline-variant": "#bec9c3", "on-surface": "#0c1f1a", "on-secondary": "#ffffff", "secondary-fixed": "#87f7d2", "surface-variant": "#d1e7de", "outline": "#6e7a74", "primary-fixed": "#9df3d5", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#00513f", "tertiary-fixed-dim": "#c0c1ff", "surface": "#e8fef5", "secondary-fixed-dim": "#6adab7", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container": "#ddf3ea", "on-error": "#ffffff", "surface-tint": "#006b54", "inverse-primary": "#81d7ba", "inverse-on-surface": "#e0f6ed", "on-secondary-fixed": "#002118", "tertiary": "#3939c7", "surface-container-high": "#d7ede4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "display-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Manrope"], "body-lg": ["Manrope"], "label-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg": ["Plus Jakarta Sans"], "body-xl": ["Manrope"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Manrope"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "600" }], "display-lg": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-xl": ["1.25rem", { "lineHeight": "2rem", "fontWeight": "500" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "500" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-y-auto"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CareCircle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCqnBunvK5NKjhycGIk6O5uA6VEC7HW7mUGUKELn6ucGe3dICz9-OfDE6lc4gjjgw8HcDUBUPEHpjtjlm9MWUvq_BuVJskW64mj7prsgwbJbp7V8cExXxt8mneAnceDyFb3_pbNz7EsqeZ37TQeVPrqLGCr6oxpBROle8j6LGdjvdr3DMt9GJX_NhU1iKwa_Jqw7Gh7Btu3VpIPCDUrYE9ptZcdgA5J9YpEYaYYxLvIbQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight leading-none">CareCircle</span><span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase mt-1">Connected Care</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0 animate-pulse"></span><div class="truncate"><p class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Eleanor Vance, 78</p><p class="font-label-sm text-label-sm text-on-surface-variant truncate">Patient ID #CC-8842</p></div></div><button aria-label="Switch elderly care profile" class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">unfold_more</span></button></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_rgba(15,90,71,0.04)]"><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Main</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="overview" href="#"><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medications" href="#"><span class="font-label-md text-label-md">Medications</span><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">6 Active</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medication-schedule" href="#"><span class="font-label-md text-label-md">Medication Schedule</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="font-label-md text-label-md">Appointments</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Collaboration</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="carecircle-members" href="#"><span class="font-label-md text-label-md">CareCircle Members</span><span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">4</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="carecircle-notification-center-smart-escalation" href="#"><span class="font-label-md text-label-md">Notification Center</span><span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full">3</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="activity-history" href="#"><span class="font-label-md text-label-md">Activity History</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Intelligence &amp; Health</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="health-insights" href="#"><span class="font-label-md text-label-md">Health Insights</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-care-assistant" href="#"><span class="font-label-md text-label-md">AI Care Assistant</span><span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">AI</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">System</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="font-label-md text-label-md">Integrations</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_rgba(15,90,71,0.04)] transition-all" data-path="settings-and-accessibility" href="#"><span class="font-label-md text-label-md">Settings &amp; Accessibility</span></a></div></nav><div class="p-space-md bg-surface-container-lowest"><button class="w-full min-h-[48px] bg-error text-on-error font-label-md text-label-md px-space-md py-space-sm rounded-xl flex items-center justify-center gap-space-xs shadow-[0_4px_16px_-2px_rgba(15,90,71,0.08)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[20px]">emergency</span><span>Emergency Quick-Call</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="w-full relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[22px]">search</span><input class="w-full h-[52px] pl-12 pr-16 bg-surface rounded-xl text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search medications, doctors, logs... ⌘K" type="text"/><kbd class="absolute right-space-md font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2 py-1 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-md py-2 rounded-full"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Vance (Daughter)</span><span class="text-outline text-xs">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Passcode Protected</span></div><div class="flex items-center gap-1 bg-surface rounded-lg p-1"><button class="min-h-[48px] px-3 flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold rounded" title="Change language" type="button"><span class="material-symbols-outlined text-[18px]">translate</span><span>EN</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><button class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded" title="Toggle larger accessible text" type="button"><span class="material-symbols-outlined text-[20px]">format_size</span></button></div><button aria-label="View notifications" class="relative min-h-[48px] min-w-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-5 h-5 bg-error text-on-error font-label-sm text-label-sm rounded-full flex items-center justify-center leading-none font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPyBdl8IKVXaOxmjMYXkmR8B_SvBN9GyoXb64KlfVpmAesnM6kXf4MJRxVm10yABpjH-cRq2ebYiMTYR0U8WzXUriv0hLGoc0amBWy_RMNPELDfJPL4Betn6h_VU0WINDNy071P0cHoc_FsW4HvPVrqLGvjukWBKNwPVvgliaZQasmMJr5ss3sJopDMBLSoR0Y5CoHKeghpjhIcg3JLhuobmk8pqLcPHoxKll2NCYo"/><div class="hidden 2xl:block text-left"><p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Sarah Vance</p><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Primary Caretaker</p></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-surface px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- ========================================== -->
+<!-- 0. DEMONSTRABLE INTERACTIVE STATE SIMULATION BAR -->
+<!-- ========================================== -->
+<div class="w-full bg-surface-container-low/80 backdrop-blur-md rounded-2xl p-space-md shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">science</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Interactive State Presets:</span>
+</div>
+<div class="flex flex-wrap items-center gap-2" id="presetButtonGroup">
+<button class="min-h-[44px] px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold shadow-sm transition-all flex items-center gap-1.5" id="preset-1" onclick="applyStatePreset(1)">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+<span>1. Default / Active (EN + Standard AAA)</span>
+</button>
+<button class="min-h-[44px] px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5" id="preset-2" onclick="applyStatePreset(2)">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>2. Live Preview: Hindi (हिन्दी) + Large Text</span>
+</button>
+<button class="min-h-[44px] px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5" id="preset-3" onclick="applyStatePreset(3)">
+<span class="w-2 h-2 rounded-full bg-on-background"></span>
+<span>3. High Contrast Mode Preview</span>
+</button>
+<button class="min-h-[44px] px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5" id="preset-4" onclick="applyStatePreset(4)">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>4. Cloud API Disconnected (Fallback)</span>
+</button>
+<button class="min-h-[44px] px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5" id="preset-5" onclick="applyStatePreset(5)">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>5. Save Success Toast</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- 1. BREADCRUMBS & WORKSPACE HEADER -->
+<!-- ========================================== -->
+<header class="flex flex-col gap-space-sm mb-space-xl">
+<!-- Breadcrumb row & compliance pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span>System</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">Language &amp; Accessibility Settings</span>
+</nav>
+<div class="inline-flex items-center gap-1.5 bg-surface-container-high px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>WCAG 2.1 AAA Compliant • Section 508 Verified</span>
+</div>
+</div>
+<!-- Main Title & Action Row -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pt-2">
+<div class="max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+          Language &amp; Accessibility Settings
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+          Configure multilingual care communications, sensory display aids, voice terminal parameters, and dignified senior-first interface preferences for <strong class="text-on-surface font-semibold">Eleanor Vance (78)</strong>.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm flex-shrink-0">
+<button class="min-h-[48px] px-space-lg bg-surface-container-lowest text-primary font-label-md text-label-md rounded-xl hover:bg-surface-container shadow-sm transition-all flex items-center justify-center gap-2" onclick="resetToDefaults()" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset All to Defaults</span>
+</button>
+<button class="relative min-h-[48px] px-space-lg bg-primary-container text-on-primary font-label-md text-label-md rounded-xl hover:bg-primary shadow-md hover:shadow-lg active:scale-[0.99] transition-all flex items-center justify-center gap-2" onclick="savePreferences()" type="button">
+<span class="material-symbols-outlined text-[20px]">check</span>
+<span>Save Preferences</span>
+<span class="ml-1 inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold animate-pulse" id="unsavedBadge">
+            3 changes uncommitted
+          </span>
+</button>
+</div>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- TOAST FEEDBACK NOTIFICATION (SIMULATED) -->
+<!-- ========================================== -->
+<div class="hidden mb-space-lg p-space-md bg-secondary text-on-secondary rounded-2xl shadow-xl flex items-center justify-between gap-space-md transition-all" id="saveToast">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">verified_user</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-primary leading-tight">Preferences Synced Across CareSphere</p>
+<p class="font-body-sm text-body-sm text-on-secondary-container/90 mt-0.5">Language cache and sensory display settings updated for Eleanor's bedside CareHub, tablet, and family mobile feeds.</p>
+</div>
+</div>
+<button aria-label="Dismiss message" class="min-h-[44px] min-w-[44px] rounded-lg hover:bg-on-secondary/10 flex items-center justify-center text-on-secondary" onclick="document.getElementById('saveToast').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- ========================================== -->
+<!-- MAIN WORKSPACE: 2-COLUMN BESPOKE LAYOUT -->
+<!-- ========================================== -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT 7 COLS: CONFIGURATION MATRICES -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- ---------------------------------------- -->
+<!-- SECTION 1: LANGUAGE & SCRIPT MATRIX      -->
+<!-- ---------------------------------------- -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-1">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+<span>Section 01 • Multilingual Clinical Localization</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Language Selection &amp; Script Rendering</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Select Eleanor's primary interface language with zero-latency regional healthcare phrase dictionaries.</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold flex-shrink-0">
+            5 Pre-compiled Engines
+          </span>
+</div>
+<!-- Language Card Group -->
+<div class="grid grid-cols-1 gap-space-sm pt-2" id="languageSelectorGrid">
+<!-- English Option -->
+<label class="language-card group relative p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all flex items-start gap-space-md shadow-sm">
+<input checked="" class="mt-1 w-5 h-5 accent-primary text-primary" name="primary_lang" onchange="handleLanguageChange('en')" type="radio" value="en"/>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">English</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">(Care Standard • US/UK Health Dialect)</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">offline_pin</span>
+<span>Active Primary</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 italic bg-surface-container-lowest/80 p-2.5 rounded-lg">
+                “Medication Time: 8:00 AM • Scheduled Visit: Dr. Robert Chen, Cardiology”
+              </p>
+</div>
+</label>
+<!-- Hindi Option -->
+<label class="language-card group relative p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container cursor-pointer transition-all flex items-start gap-space-md shadow-sm">
+<input class="mt-1 w-5 h-5 accent-primary text-primary" name="primary_lang" onchange="handleLanguageChange('hi')" type="radio" value="hi"/>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">हिन्दी</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">(Devanagari • 84% elderly comprehension)</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">download_done</span>
+<span>Pre-cached Offline</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 italic bg-surface-container-low/70 p-2.5 rounded-lg">
+                “दवा का समय: 8:00 AM • डॉक्टर की नियुक्ति: डॉ. रॉबर्ट चेन, हृदय रोग विशेषज्ञ”
+              </p>
+</div>
+</label>
+<!-- Tamil Option -->
+<label class="language-card group relative p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container cursor-pointer transition-all flex items-start gap-space-md shadow-sm">
+<input class="mt-1 w-5 h-5 accent-primary text-primary" name="primary_lang" onchange="handleLanguageChange('ta')" type="radio" value="ta"/>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">தமிழ்</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">(Tamil script • Chennai &amp; Coimbatore clinic standard)</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">download_done</span>
+<span>Pre-cached Offline</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 italic bg-surface-container-low/70 p-2.5 rounded-lg">
+                “மருந்து நேரம்: 8:00 AM • மருத்துவ சந்திப்பு: டாக்டர் ராபர்ட் சென், இதயவியல்”
+              </p>
+</div>
+</label>
+<!-- Telugu Option -->
+<label class="language-card group relative p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container cursor-pointer transition-all flex items-start gap-space-md shadow-sm">
+<input class="mt-1 w-5 h-5 accent-primary text-primary" name="primary_lang" onchange="handleLanguageChange('te')" type="radio" value="te"/>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">తెలుగు</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">(Telugu script • Andhra &amp; Telangana care partner network)</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">download_done</span>
+<span>Pre-cached Offline</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 italic bg-surface-container-low/70 p-2.5 rounded-lg">
+                “మందుల సమయం: 8:00 AM • డాక్టర్ అపాయింట్‌మెంట్: డాక్టర్ రాబర్ట్ చెన్, కార్డియాలజీ”
+              </p>
+</div>
+</label>
+<!-- Bengali Option -->
+<label class="language-card group relative p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container cursor-pointer transition-all flex items-start gap-space-md shadow-sm">
+<input class="mt-1 w-5 h-5 accent-primary text-primary" name="primary_lang" onchange="handleLanguageChange('bn')" type="radio" value="bn"/>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">বাংলা</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">(Bengali script • Kolkata &amp; East zone support)</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">download_done</span>
+<span>Pre-cached Offline</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 italic bg-surface-container-low/70 p-2.5 rounded-lg">
+                “ওষুধ খাওয়ার সময়: 8:00 AM • ডাক্তার দর্শন: ড. রবার্ট চেন, কার্ডিওলজি”
+              </p>
+</div>
+</label>
+</div>
+<!-- Global Scope Cascade Matrix -->
+<div class="mt-2 p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[18px]">hub</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Universal Ecosystem Cascade Scope</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Selecting this language automatically synchronizes terminology across the entire care network:
+          </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+<div class="p-2 bg-surface-container-lowest rounded-lg flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">side_navigation</span>
+<span class="truncate">Sidebar Navigation</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded-lg flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">monitor_heart</span>
+<span class="truncate">Telemetry Cards</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded-lg flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">pill</span>
+<span class="truncate">Med Dispenser Chimes</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded-lg flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_month</span>
+<span class="truncate">SMS Chaperone Alerts</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded-lg flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">notifications_active</span>
+<span class="truncate">Smart Escalations</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded-lg flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">mic</span>
+<span class="truncate">Bedside Audio Transcripts</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ---------------------------------------- -->
+<!-- SECTION 2: TRANSLATION SERVICE ARCHITECTURE -->
+<!-- ---------------------------------------- -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-1">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Section 02 • Translation Architecture</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Google Cloud Translation API Readiness</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dual-tier neural pipeline ensuring Eleanor's care logs never suffer clinical mistranslation during network dropouts.</p>
+</div>
+<button class="min-h-[44px] px-3 rounded-xl bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors flex items-center gap-1.5" onclick="toggleApiConnection()" type="button">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+<span>Simulate Disconnect</span>
+</button>
+</div>
+<!-- Architecture Integrity Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low transition-all" id="apiStatusContainer">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary animate-pulse" id="apiStatusIndicator"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface" id="apiStatusText">SANDBOX STAGING / READY FOR API KEY</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">speed</span>
+<span id="apiLatencyText">142ms neural engine response benchmark</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm text-on-surface">
+<!-- Primary Tier -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">neurology</span>
+<span>Primary Tier: Google Cloud Translation Advanced</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Neural Machine Translation v3 configured with customized medical terminology glossaries for elder cardiology and anti-hypertensive doses.
+              </p>
+</div>
+<!-- Secondary Fallback Tier -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">dns</span>
+<span>Zero-Latency Fallback: On-Device Clinical Dict</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Pre-cached JSON schema with 2,400 certified geriatric care terms. Instantly engages if broadband latency exceeds 350ms or WiFi drops.
+              </p>
+</div>
+</div>
+<!-- Fallback Switcher row -->
+<div class="mt-space-sm pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Local Dictionary Cache: 100% Synced (5 languages, 2,400 phrases)</span>
+</div>
+<label class="inline-flex items-center gap-2 cursor-pointer">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Auto-failover enabled</span>
+<input checked="" class="w-5 h-5 accent-primary rounded text-primary" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-xl flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Architecture Note:</strong> CareCircle utilizes a strict sandbox staging environment. Medical dosage tokens (e.g., “10mg”, “QD”, “PRN”) are protected with immutable programmatic boundary tokens to prevent generative translation hallucinations.
+          </p>
+</div>
+</section>
+<!-- ---------------------------------------- -->
+<!-- SECTION 3: SENSORY AIDS & MOTOR CONTROLS -->
+<!-- ---------------------------------------- -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-1">
+<span class="material-symbols-outlined text-[18px]">accessibility_new</span>
+<span>Section 03 • Physical &amp; Sensory Accommodations</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Elderly Accessibility Controls</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Calibrate optical readability, visual contrast hierarchies, and physical touch boundaries designed for arthritis and vision decline.</p>
+</div>
+<!-- Sub-block A: Typography & Text Scaling -->
+<div class="p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<label class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">format_size</span>
+<span>Typography Scale &amp; Visual Weights</span>
+</label>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Recommended: Large (125%)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" id="fontSizeSelectorGroup">
+<!-- 100% -->
+<label class="p-3 bg-surface-container-lowest rounded-xl cursor-pointer hover:bg-surface-container transition-all flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Standard (100%)</span>
+<input class="accent-primary" name="text_scale" onchange="handleFontSizeChange('100')" type="radio" value="100"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mt-1">16px base font • Caregiver standard view</p>
+</label>
+<!-- 125% -->
+<label class="p-3 bg-primary-container/10 rounded-xl cursor-pointer hover:bg-primary-container/20 transition-all flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Large (125%)</span>
+<input checked="" class="accent-primary" name="text_scale" onchange="handleFontSizeChange('125')" type="radio" value="125"/>
+</div>
+<p class="text-body-md text-on-surface font-semibold mt-1">18px base font • Eleanor's Active Preset</p>
+</label>
+<!-- 150% -->
+<label class="p-3 bg-surface-container-lowest rounded-xl cursor-pointer hover:bg-surface-container transition-all flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Extra-Large (150%)</span>
+<input class="accent-primary" name="text_scale" onchange="handleFontSizeChange('150')" type="radio" value="150"/>
+</div>
+<p class="text-body-lg text-on-surface font-bold mt-1">22px high-legibility elder reading</p>
+</label>
+</div>
+</div>
+<!-- Sub-block B: Contrast & Chromatic Calibration -->
+<div class="p-space-md bg-surface-container-low rounded-xl">
+<label class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">contrast</span>
+<span>Contrast &amp; Chromatic Calibration</span>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" id="contrastSelectorGroup">
+<label class="p-3 bg-surface-container-lowest rounded-xl cursor-pointer hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Serene Vitality</span>
+<input checked="" class="accent-primary" name="contrast_mode" onchange="handleContrastChange('standard')" type="radio" value="standard"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mt-1">Soft mint (#E8FEF5) with balanced teal tones</p>
+</label>
+<label class="p-3 bg-surface-container-lowest rounded-xl cursor-pointer hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">High Contrast AAA</span>
+<input class="accent-primary" name="contrast_mode" onchange="handleContrastChange('high')" type="radio" value="high"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mt-1">Stark obsidian on chalk white with dark ink borders</p>
+</label>
+<label class="p-3 bg-surface-container-lowest rounded-xl cursor-pointer hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Bedside Night Glow</span>
+<input class="accent-primary" name="contrast_mode" onchange="handleContrastChange('night')" type="radio" value="night"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mt-1">Deep emerald dark palette for melatonin preservation</p>
+</label>
+</div>
+</div>
+<!-- Sub-block C: Motor Accommodations -->
+<div class="space-y-space-sm">
+<!-- Reduced Motion -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">motion_photos_off</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Reduced Motion &amp; Vestibular Rest</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Disables bouncing icons, auto-scroll transitions, and pulsing indicator rings.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] px-2">
+<input checked="" class="sr-only peer" id="reducedMotionToggle" onchange="handleMotionToggle(this.checked)" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[14px] after:left-[10px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- 56px Touch Targets -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">touch_app</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Expanded 56px Tactile Buttons (Tremor Shield)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Expands minimum clickable boundary to 56px with a 16px deadzone buffer.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] px-2">
+<input checked="" class="sr-only peer" id="largeTargetsToggle" onchange="handleTargetSizeToggle(this.checked)" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[14px] after:left-[10px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Sovereign Simple View -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">elderly</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Senior Sovereign Mode (Simplified Direct Action)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Replaces clinical dashboards with 3 large high-contrast prompts on Eleanor's dedicated tablet.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] px-2">
+<input class="sr-only peer" id="sovereignModeToggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[14px] after:left-[10px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- ---------------------------------------- -->
+<!-- SECTION 4: VOICE-FRIENDLY CAREHUB PARAMS -->
+<!-- ---------------------------------------- -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-1">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+<span>Section 04 • Ambient Voice &amp; CareHub Audio Terminal</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Bedside Terminal Acoustics &amp; Voice Synthesis</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Calibrate how Eleanor talks to and hears the CareCircle bedside SmartHub in her bedroom suite.</p>
+</div>
+<div class="space-y-space-md">
+<!-- Voice Interaction Master Switch -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">voice_chat</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Enable CareHub Bedside Voice Queries &amp; Audio Prompts</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Allows Eleanor to say “Hey CareCircle, what pills are due?” without touching any screen.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] px-2">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[14px] after:left-[10px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Speed slider & Chime -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Speech Speed -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col justify-between gap-3">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Speech Cadence Rate</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="speedValueLabel">0.85x (Gentle)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Designed with micro-pauses between drug names and dosages.</p>
+</div>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" max="1.2" min="0.7" oninput="document.getElementById('speedValueLabel').innerText = this.value + 'x (Elder Adapted)'" step="0.05" type="range" value="0.85"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>0.7x (Slow)</span>
+<span>0.85x (Gentle)</span>
+<span>1.0x (Standard)</span>
+</div>
+</div>
+<!-- Chime Selection & Test -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col justify-between gap-3">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Bedside Audio Chime Alert</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Warm non-alarming resonant frequency (432Hz harmonic tone).</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 min-h-[44px] px-3 bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded-xl font-label-sm text-label-sm font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" id="testChimeBtn" onclick="playTestTone()" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">volume_up</span>
+<span id="testChimeBtnLabel">Play Sample Chime</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Preset: “Warm Wooden Marimba + Calming Vocal Cue”</span>
+</div>
+</div>
+<!-- Hardware Status Bar -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm" id="hardwareStatusBar">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">mic</span>
+<div class="text-on-surface">
+<p class="font-label-sm text-label-sm font-bold">Microphone Access Granted (Bedside CareHub Array)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4-Mic Far-Field Beamforming active • Signal-to-noise ratio: 94 dB</p>
+</div>
+</div>
+<button class="min-h-[40px] px-3 bg-surface-container text-error font-label-sm text-label-sm font-bold rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors flex items-center gap-1" onclick="simulateMicError()" type="button">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>Simulate Mic Denied</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT 5 COLS: LIVE INTERACTIVE PREVIEW PANEL & AUDIT TRAIL -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl sticky top-24">
+<!-- ---------------------------------------- -->
+<!-- SECTION 5: LIVE INTERACTIVE PREVIEW PANEL -->
+<!-- ---------------------------------------- -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Header & Quick switcher pills -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[18px]">preview</span>
+<span>Section 05 • Real-Time Patient Interface</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Live Mirror
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">The “Care Previewer”</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immediate visual verification of how Eleanor Vance views her schedule and touches buttons on her bedside tablet.</p>
+</div>
+<!-- Quick Mini Controls atop Previewer -->
+<div class="flex flex-wrap items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-sm text-label-sm font-bold text-primary flex items-center gap-1 shadow-sm" onclick="togglePreviewLang()" type="button">
+<span class="material-symbols-outlined text-[16px]">translate</span>
+<span id="previewLangBtnLabel">EN ↔ HI</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1 shadow-sm" onclick="cyclePreviewFontSize()" type="button">
+<span class="material-symbols-outlined text-[16px]">text_fields</span>
+<span id="previewFontBtnLabel">Size: 125%</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1 shadow-sm" onclick="togglePreviewContrast()" type="button">
+<span class="material-symbols-outlined text-[16px]">palette</span>
+<span id="previewContrastBtnLabel">Contrast: Normal</span>
+</button>
+</div>
+<!-- SIMULATED TABLET CANVAS -->
+<div class="w-full bg-surface rounded-2xl p-space-md transition-all" id="previewCanvas">
+<!-- Tablet Header Simulation -->
+<div class="flex items-center justify-between pb-3 mb-3">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface" id="previewPatientName">Eleanor Vance • Bedside Hub #01</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono" id="previewClock">07:54 AM</span>
+</div>
+<!-- Medication Reminder Card (Dynamic) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-3" id="previewMedCard">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-error" id="previewCardOverline">Morning Dose Due In 6 Mins</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Water Ready</span>
+</div>
+<!-- Medication Title & Dosage -->
+<div class="my-2">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="previewMedTitle">Lisinopril 10mg</h3>
+<p class="font-body-md text-body-md text-on-surface-variant" id="previewMedSub">Take 1 tablet with fresh water after breakfast.</p>
+</div>
+<!-- High tactile action buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-2 pt-2">
+<button class="w-full min-h-[56px] px-space-md bg-primary-container text-on-primary font-label-lg text-label-lg font-bold rounded-xl hover:bg-primary shadow-sm flex items-center justify-center gap-2 transition-all" id="previewTakenBtn" onclick="triggerTakenSimulation()" type="button">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<span id="previewTakenBtnText">I Took My Medication</span>
+</button>
+<button class="w-full sm:w-auto min-h-[56px] px-space-md bg-surface-container text-primary font-label-md text-label-md font-bold rounded-xl hover:bg-surface-container-high flex items-center justify-center gap-2 transition-all" id="previewVoiceBtn" type="button">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+<span id="previewVoiceBtnText">Voice Check-in</span>
+</button>
+</div>
+</div>
+<!-- Simulated Appointment Prompt -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-sm" id="previewApptCard">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">stethoscope</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface" id="previewApptDoctor">Dr. Robert Chen, MD</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="previewApptTime">Cardiology Review • 10:30 AM Tomorrow</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm font-semibold text-secondary" id="previewApptBadge">
+              Chaperone: Sarah Vance
+            </span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-outline text-center mt-1">
+          Simulated tablet frame conforms to WCAG 2.1 AAA minimum 7:1 text-to-background luminance standard.
+        </p>
+</section>
+<!-- ---------------------------------------- -->
+<!-- SECTION 6: PERSISTENCE & AUDIT SUMMARY   -->
+<!-- ---------------------------------------- -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-1">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Section 06 • Sovereign Consent &amp; Audit Trail</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Configuration Integrity Summary</h2>
+</div>
+<div class="space-y-2.5">
+<div class="flex justify-between items-center p-2.5 bg-surface-container-low rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Selected Primary Language</span>
+<span class="font-label-sm text-label-sm font-bold text-primary" id="summaryLanguage">English (US) • Hindi Audio Dual</span>
+</div>
+<div class="flex justify-between items-center p-2.5 bg-surface-container-low rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Active Display Scaling</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface" id="summaryDisplayMode">Large Text (125%) • AAA Outline</span>
+</div>
+<div class="flex justify-between items-center p-2.5 bg-surface-container-low rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Motor &amp; Motion Profile</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary" id="summaryMotorProfile">Reduced Motion ON • 56px Targets</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-xl flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0 mt-0.5">policy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Sovereign Care Proxy:</strong> Authorized by <strong class="text-on-surface">Sarah Vance (Daughter)</strong> with verbal audio authorization recorded from Eleanor Vance via CareHub on Oct 14, 2024.
+            </p>
+</div>
+</div>
+<!-- Sticky Commit Button -->
+<button class="w-full min-h-[52px] bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-bold rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 mt-2" onclick="savePreferences()" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Commit Accessibility Baseline</span>
+</button>
+</section>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- CLIENT-SIDE SCRIPT FOR DYNAMIC INTERACTIVITY -->
+<!-- ========================================== -->
+<script>
+  // State Store
+  const state = {
+    lang: 'en',
+    scale: '125',
+    contrast: 'standard',
+    reducedMotion: true,
+    largeTargets: true,
+    apiConnected: true,
+    unsavedChanges: 3
+  };
+
+  const translations = {
+    en: {
+      medTitle: "Lisinopril 10mg",
+      medSub: "Take 1 tablet with fresh water after breakfast.",
+      medOverline: "Morning Dose Due In 6 Mins",
+      takenBtn: "I Took My Medication",
+      voiceBtn: "Voice Check-in",
+      doctorName: "Dr. Robert Chen, MD",
+      doctorTime: "Cardiology Review • 10:30 AM Tomorrow",
+      summaryLang: "English (US) • Hindi Audio Dual",
+      chaperone: "Chaperone: Sarah Vance"
+    },
+    hi: {
+      medTitle: "लिसिनोप्रिल 10mg (Lisinopril)",
+      medSub: "नाश्ते के बाद ताजे पानी के साथ 1 गोली लें।",
+      medOverline: "सुबह की खुराक: 6 मिनट में देय",
+      takenBtn: "मैंने अपनी दवा ले ली है",
+      voiceBtn: "आवाज से पुष्टि करें",
+      doctorName: "डॉ. रॉबर्ट चेन, एम.डी.",
+      doctorTime: "कार्डियोलॉजी समीक्षा • कल सुबह 10:30 बजे",
+      summaryLang: "हिन्दी (Devanagari) • संपूर्ण तंत्र",
+      chaperone: "सहायक: सारा वेंस"
+    },
+    ta: {
+      medTitle: "லிசினோப்ரில் 10mg (Lisinopril)",
+      medSub: "காலை உணவுக்குப் பிறகு 1 மாத்திரையை தண்ணீருடன் விழுங்கவும்.",
+      medOverline: "காலை மருந்து: 6 நிமிடங்களில்",
+      takenBtn: "நான் மருந்து உட்கொண்டேன்",
+      voiceBtn: "குரல் பதிவு",
+      doctorName: "டாக்டர் ராபர்ட் சென், MD",
+      doctorTime: "இதய பரிசோதனை • நாளை காலை 10:30",
+      summaryLang: "தமிழ் (Tamil) • நேரலை பயன்முறை",
+      chaperone: "துணை: சாரா வான்ஸ்"
+    },
+    te: {
+      medTitle: "లిసినోప్రిల్ 10mg (Lisinopril)",
+      medSub: "అల్పాహారం తర్వాత 1 మాత్ర మంచి నీటితో తీసుకోండి.",
+      medOverline: "ఉదయం మోతాదు: 6 నిమిషాల్లో",
+      takenBtn: "నేను మందు తీసుకున్నాను",
+      voiceBtn: "వాయిస్ నిర్ధారణ",
+      doctorName: "డాక్టర్ రాబర్ట్ చెన్, MD",
+      doctorTime: "కార్డియాలజీ సమీక్ష • రేపు ఉదయం 10:30",
+      summaryLang: "తెలుగు (Telugu) • కార్యాచరణ",
+      chaperone: "సహాయకురాలు: సారా వాన్స్"
+    },
+    bn: {
+      medTitle: "লিসিনোপ্রিল ১০ মিগ্রা (Lisinopril)",
+      medSub: "সকালের নাস্তার পর এক গ্লাস জল দিয়ে ১টি ট্যাবলেট খান।",
+      medOverline: "সকালের ডোজ: ৬ মিনিটে বাকি",
+      takenBtn: "আমি ওষুধ গ্রহণ করেছি",
+      voiceBtn: "ভয়েস চেক-ইন",
+      doctorName: "ডা. রবার্ট চেন, এমডি",
+      doctorTime: "কার্ডিওলজি পরীক্ষা • আগামীকাল সকাল ১০:৩০",
+      summaryLang: "বাংলা (Bengali) • পূর্বাঞ্চল",
+      chaperone: "সঙ্গী: সারাহ ভ্যান্স"
+    }
+  };
+
+  function updatePreview() {
+    const t = translations[state.lang] || translations.en;
+    document.getElementById('previewMedTitle').innerText = t.medTitle;
+    document.getElementById('previewMedSub').innerText = t.medSub;
+    document.getElementById('previewCardOverline').innerText = t.medOverline;
+    document.getElementById('previewTakenBtnText').innerText = t.takenBtn;
+    document.getElementById('previewVoiceBtnText').innerText = t.voiceBtn;
+    document.getElementById('previewApptDoctor').innerText = t.doctorName;
+    document.getElementById('previewApptTime').innerText = t.doctorTime;
+    document.getElementById('previewApptBadge').innerText = t.chaperone;
+    document.getElementById('summaryLanguage').innerText = t.summaryLang;
+
+    // Font size scaling on preview card
+    const titleEl = document.getElementById('previewMedTitle');
+    const subEl = document.getElementById('previewMedSub');
+    if (state.scale === '100') {
+      titleEl.className = "font-headline-sm text-headline-sm font-bold text-on-surface";
+      subEl.className = "font-body-sm text-body-sm text-on-surface-variant";
+      document.getElementById('previewFontBtnLabel').innerText = "Size: 100%";
+      document.getElementById('summaryDisplayMode').innerText = "Standard Text (100%) • Normal";
+    } else if (state.scale === '125') {
+      titleEl.className = "font-headline-md text-headline-md font-bold text-on-surface";
+      subEl.className = "font-body-md text-body-md text-on-surface font-medium";
+      document.getElementById('previewFontBtnLabel').innerText = "Size: 125%";
+      document.getElementById('summaryDisplayMode').innerText = "Large Text (125%) • Eleanor Preset";
+    } else if (state.scale === '150') {
+      titleEl.className = "font-headline-lg text-headline-lg font-bold text-on-surface";
+      subEl.className = "font-body-lg text-body-lg text-on-surface font-semibold";
+      document.getElementById('previewFontBtnLabel').innerText = "Size: 150%";
+      document.getElementById('summaryDisplayMode').innerText = "Extra Large (150%) • Maximum Legibility";
+    }
+
+    // High contrast styling
+    const canvas = document.getElementById('previewCanvas');
+    const medCard = document.getElementById('previewMedCard');
+    const apptCard = document.getElementById('previewApptCard');
+    if (state.contrast === 'high') {
+      canvas.className = "w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-md";
+      medCard.className = "bg-surface-container-lowest rounded-xl p-space-md shadow-none bg-surface-container-lowest";
+      apptCard.className = "bg-surface-container-lowest rounded-xl p-space-md shadow-none bg-surface-container-lowest";
+      document.getElementById('previewContrastBtnLabel').innerText = "Contrast: AAA High";
+    } else {
+      canvas.className = "w-full bg-surface rounded-2xl p-space-md shadow-none";
+      medCard.className = "bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-3";
+      apptCard.className = "bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-sm";
+      document.getElementById('previewContrastBtnLabel').innerText = "Contrast: Normal";
+    }
+
+    // Button touch target heights
+    const takenBtn = document.getElementById('previewTakenBtn');
+    if (state.largeTargets) {
+      takenBtn.className = "w-full min-h-[56px] px-space-md bg-primary-container text-on-primary font-label-lg text-label-lg font-bold rounded-xl hover:bg-primary shadow-sm flex items-center justify-center gap-2 transition-all";
+      document.getElementById('summaryMotorProfile').innerText = "Reduced Motion ON • 56px Targets";
+    } else {
+      takenBtn.className = "w-full min-h-[44px] px-space-md bg-primary-container text-on-primary font-label-md text-label-md font-bold rounded-xl hover:bg-primary shadow-sm flex items-center justify-center gap-2 transition-all";
+      document.getElementById('summaryMotorProfile').innerText = "Motion Standard • 44px Targets";
+    }
+  }
+
+  function handleLanguageChange(code) {
+    state.lang = code;
+    updatePreview();
+  }
+
+  function handleFontSizeChange(scale) {
+    state.scale = scale;
+    updatePreview();
+  }
+
+  function handleContrastChange(mode) {
+    state.contrast = mode;
+    updatePreview();
+  }
+
+  function handleMotionToggle(checked) {
+    state.reducedMotion = checked;
+    updatePreview();
+  }
+
+  function handleTargetSizeToggle(checked) {
+    state.largeTargets = checked;
+    updatePreview();
+  }
+
+  function togglePreviewLang() {
+    state.lang = state.lang === 'en' ? 'hi' : 'en';
+    const radios = document.getElementsByName('primary_lang');
+    radios.forEach(r => { if(r.value === state.lang) r.checked = true; });
+    updatePreview();
+  }
+
+  function cyclePreviewFontSize() {
+    if (state.scale === '100') state.scale = '125';
+    else if (state.scale === '125') state.scale = '150';
+    else state.scale = '100';
+    const radios = document.getElementsByName('text_scale');
+    radios.forEach(r => { if(r.value === state.scale) r.checked = true; });
+    updatePreview();
+  }
+
+  function togglePreviewContrast() {
+    state.contrast = state.contrast === 'standard' ? 'high' : 'standard';
+    const radios = document.getElementsByName('contrast_mode');
+    radios.forEach(r => { if(r.value === state.contrast) r.checked = true; });
+    updatePreview();
+  }
+
+  function toggleApiConnection() {
+    state.apiConnected = !state.apiConnected;
+    const indicator = document.getElementById('apiStatusIndicator');
+    const text = document.getElementById('apiStatusText');
+    const latency = document.getElementById('apiLatencyText');
+
+    if (!state.apiConnected) {
+      indicator.className = "w-3 h-3 rounded-full bg-error";
+      text.innerText = "CLOUD API OFFLINE (LOCAL FALLBACK ACTIVE)";
+      latency.innerText = "Local cache active (0ms lookup, 2,400 clinical terms safe)";
+    } else {
+      indicator.className = "w-3 h-3 rounded-full bg-secondary animate-pulse";
+      text.innerText = "SANDBOX STAGING / READY FOR API KEY";
+      latency.innerText = "142ms neural engine response benchmark";
+    }
+  }
+
+  function simulateMicError() {
+    const bar = document.getElementById('hardwareStatusBar');
+    bar.className = "p-space-md bg-error-container text-on-error-container rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm";
+    bar.innerHTML = `
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-error text-[24px]">mic_off</span>
+        <div>
+          <p class="font-label-sm text-label-sm font-bold">Microphone Access Muted / Permission Denied</p>
+          <p class="font-body-sm text-body-sm">Bedside SmartHub cannot detect Eleanor's voice prompts. Check physical privacy switch on back of hub.</p>
+        </div>
+      </div>
+      <button type="button" onclick="restoreMicStatus()" class="min-h-[40px] px-3 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold rounded-lg shadow-sm hover:bg-surface-container transition-colors">
+        Restore Microphone
+      </button>
+    `;
+  }
+
+  function restoreMicStatus() {
+    const bar = document.getElementById('hardwareStatusBar');
+    bar.className = "p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm";
+    bar.innerHTML = `
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary text-[22px]">mic</span>
+        <div class="text-on-surface">
+          <p class="font-label-sm text-label-sm font-bold">Microphone Access Granted (Bedside CareHub Array)</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">4-Mic Far-Field Beamforming active &bull; Signal-to-noise ratio: 94 dB</p>
+        </div>
+      </div>
+      <button type="button" onclick="simulateMicError()" class="min-h-[40px] px-3 bg-surface-container text-error font-label-sm text-label-sm font-bold rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors flex items-center gap-1">
+        <span class="material-symbols-outlined text-[16px]">warning</span>
+        <span>Simulate Mic Denied</span>
+      </button>
+    `;
+  }
+
+  function playTestTone() {
+    const btn = document.getElementById('testChimeBtn');
+    const label = document.getElementById('testChimeBtnLabel');
+    btn.classList.add('bg-primary-container', 'text-on-primary');
+    label.innerText = "Playing 432Hz Chime...";
+    setTimeout(() => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary');
+      label.innerText = "Play Sample Chime";
+    }, 1800);
+  }
+
+  function triggerTakenSimulation() {
+    const btn = document.getElementById('previewTakenBtn');
+    const text = document.getElementById('previewTakenBtnText');
+    btn.classList.replace('bg-primary-container', 'bg-secondary');
+    text.innerText = "Dose Logged ✓ (Sent to Sarah)";
+    setTimeout(() => {
+      btn.classList.replace('bg-secondary', 'bg-primary-container');
+      text.innerText = translations[state.lang]?.takenBtn || "I Took My Medication";
+    }, 2500);
+  }
+
+  function savePreferences() {
+    const toast = document.getElementById('saveToast');
+    const badge = document.getElementById('unsavedBadge');
+    toast.classList.remove('hidden');
+    if (badge) badge.classList.add('hidden');
+    setTimeout(() => {
+      toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 50);
+  }
+
+  function resetToDefaults() {
+    state.lang = 'en';
+    state.scale = '100';
+    state.contrast = 'standard';
+    state.reducedMotion = false;
+    state.largeTargets = false;
+    state.apiConnected = true;
+
+    // Reset radio DOM elements
+    document.querySelectorAll("input[name='primary_lang']")[0].checked = true;
+    document.querySelectorAll("input[name='text_scale']")[0].checked = true;
+    document.querySelectorAll("input[name='contrast_mode']")[0].checked = true;
+    document.getElementById('reducedMotionToggle').checked = false;
+    document.getElementById('largeTargetsToggle').checked = false;
+
+    updatePreview();
+  }
+
+  function applyStatePreset(presetId) {
+    // Reset active preset button styling
+    const buttons = document.querySelectorAll('#presetButtonGroup button');
+    buttons.forEach(b => {
+      b.className = "min-h-[44px] px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5";
+    });
+    const activeBtn = document.getElementById('preset-' + presetId);
+    if (activeBtn) {
+      activeBtn.className = "min-h-[44px] px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold shadow-sm transition-all flex items-center gap-1.5";
+    }
+
+    if (presetId === 1) {
+      // Default English AAA
+      state.lang = 'en';
+      state.scale = '100';
+      state.contrast = 'standard';
+      state.apiConnected = true;
+      document.querySelectorAll("input[name='primary_lang']")[0].checked = true;
+      document.querySelectorAll("input[name='text_scale']")[0].checked = true;
+      document.querySelectorAll("input[name='contrast_mode']")[0].checked = true;
+      updatePreview();
+    } else if (presetId === 2) {
+      // Hindi + Large Text
+      state.lang = 'hi';
+      state.scale = '125';
+      state.contrast = 'standard';
+      document.querySelectorAll("input[name='primary_lang']")[1].checked = true;
+      document.querySelectorAll("input[name='text_scale']")[1].checked = true;
+      updatePreview();
+    } else if (presetId === 3) {
+      // High Contrast
+      state.contrast = 'high';
+      document.querySelectorAll("input[name='contrast_mode']")[1].checked = true;
+      updatePreview();
+    } else if (presetId === 4) {
+      // Cloud API Disconnected
+      if (state.apiConnected) toggleApiConnection();
+    } else if (presetId === 5) {
+      // Save Toast Trigger
+      savePreferences();
+    }
+  }
+
+  // Initial render call
+  updatePreview();
+</script></main></div></body></html>

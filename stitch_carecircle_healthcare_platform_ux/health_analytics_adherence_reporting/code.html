@@ -1,0 +1,966 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#e8fef5", "surface-container-low": "#e2f9ef", "secondary": "#006b54", "tertiary-fixed": "#e1e0ff", "on-error-container": "#93000a", "on-surface-variant": "#3e4944", "on-tertiary-fixed-variant": "#2f2ebe", "on-primary-fixed-variant": "#00513f", "on-secondary-container": "#007259", "primary-fixed-dim": "#81d7ba", "inverse-surface": "#21342e", "background": "#e8fef5", "surface-dim": "#c9dfd6", "on-primary-fixed": "#002118", "on-primary": "#ffffff", "primary": "#005b47", "primary-container": "#13755d", "on-primary-container": "#a1f8da", "secondary-container": "#87f7d2", "on-tertiary-container": "#e7e5ff", "on-tertiary-fixed": "#07006c", "surface-container-highest": "#d1e7de", "on-background": "#0c1f1a", "surface-container-lowest": "#ffffff", "tertiary-container": "#5355e0", "outline-variant": "#bec9c3", "on-surface": "#0c1f1a", "on-secondary": "#ffffff", "secondary-fixed": "#87f7d2", "surface-variant": "#d1e7de", "outline": "#6e7a74", "primary-fixed": "#9df3d5", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#00513f", "tertiary-fixed-dim": "#c0c1ff", "surface": "#e8fef5", "secondary-fixed-dim": "#6adab7", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container": "#ddf3ea", "on-error": "#ffffff", "surface-tint": "#006b54", "inverse-primary": "#81d7ba", "inverse-on-surface": "#e0f6ed", "on-secondary-fixed": "#002118", "tertiary": "#3939c7", "surface-container-high": "#d7ede4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "display-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Manrope"], "body-lg": ["Manrope"], "label-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg": ["Plus Jakarta Sans"], "body-xl": ["Manrope"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Manrope"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "600" }], "display-lg": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-xl": ["1.25rem", { "lineHeight": "2rem", "fontWeight": "500" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "500" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-y-auto"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CareCircle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCqnBunvK5NKjhycGIk6O5uA6VEC7HW7mUGUKELn6ucGe3dICz9-OfDE6lc4gjjgw8HcDUBUPEHpjtjlm9MWUvq_BuVJskW64mj7prsgwbJbp7V8cExXxt8mneAnceDyFb3_pbNz7EsqeZ37TQeVPrqLGCr6oxpBROle8j6LGdjvdr3DMt9GJX_NhU1iKwa_Jqw7Gh7Btu3VpIPCDUrYE9ptZcdgA5J9YpEYaYYxLvIbQ"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight leading-none">CareCircle</span><span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase mt-1">Connected Care</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0 animate-pulse"></span><div class="truncate"><p class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Eleanor Vance, 78</p><p class="font-label-sm text-label-sm text-on-surface-variant truncate">Patient ID #CC-8842</p></div></div><button aria-label="Switch elderly care profile" class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">unfold_more</span></button></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_rgba(15,90,71,0.04)]"><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Main</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="overview" href="#"><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medications" href="#"><span class="font-label-md text-label-md">Medications</span><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">6 Active</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medication-schedule" href="#"><span class="font-label-md text-label-md">Medication Schedule</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="font-label-md text-label-md">Appointments</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Collaboration</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="carecircle-members" href="#"><span class="font-label-md text-label-md">CareCircle Members</span><span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">4</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notification-center" href="#"><span class="font-label-md text-label-md">Notification Center</span><span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full">3</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="activity-history" href="#"><span class="font-label-md text-label-md">Activity History</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Intelligence &amp; Health</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="health-insights" href="#"><span class="font-label-md text-label-md">Health Insights</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="health-analytics-and-adherence" href="#"><span class="font-label-md text-label-md">Health Analytics &amp; Adherence</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-care-assistant" href="#"><span class="font-label-md text-label-md">AI Care Assistant</span><span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">AI</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">System</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="font-label-md text-label-md">Integrations</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings-and-accessibility" href="#"><span class="font-label-md text-label-md">Settings &amp; Accessibility</span></a></div></nav><div class="p-space-md bg-surface-container-lowest"><button class="w-full min-h-[48px] bg-error text-on-error font-label-md text-label-md px-space-md py-space-sm rounded-xl flex items-center justify-center gap-space-xs shadow-[0_4px_16px_-2px_rgba(15,90,71,0.08)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[20px]">emergency</span><span>Emergency Quick-Call</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="w-full relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[22px]">search</span><input class="w-full h-[52px] pl-12 pr-16 bg-surface rounded-xl text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search medications, doctors, logs... ⌘K" type="text"><kbd class="absolute right-space-md font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2 py-1 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-md py-2 rounded-full"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Vance (Healthcare Proxy)</span><span class="text-outline text-xs">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Passcode Protected</span></div><div class="flex items-center gap-1 bg-surface rounded-lg p-1"><button class="min-h-[48px] px-3 flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold rounded" title="Change language" type="button"><span class="material-symbols-outlined text-[18px]">translate</span><span>EN</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><button class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded" title="Toggle larger accessible text" type="button"><span class="material-symbols-outlined text-[20px]">format_size</span></button></div><button aria-label="View notifications" class="relative min-h-[48px] min-w-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-5 h-5 bg-error text-on-error font-label-sm text-label-sm rounded-full flex items-center justify-center leading-none font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPyBdl8IKVXaOxmjMYXkmR8B_SvBN9GyoXb64KlfVpmAesnM6kXf4MJRxVm10yABpjH-cRq2ebYiMTYR0U8WzXUriv0hLGoc0amBWy_RMNPELDfJPL4Betn6h_VU0WINDNy071P0cHoc_FsW4HvPVrqLGvjukWBKNwPVvgliaZQasmMJr5ss3sJopDMBLSoR0Y5CoHKeghpjhIcg3JLhuobmk8pqLcPHoxKll2NCYo"><div class="hidden 2xl:block text-left"><p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Sarah Vance</p><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Primary Caretaker</p></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-surface px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- BREADCRUMBS & TOP BAR -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<nav aria-label="Breadcrumbs" class="flex items-center gap-2">
+<a class="font-label-sm text-label-sm text-outline hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline text-xs">/</span>
+<a class="font-label-sm text-label-sm text-outline hover:text-primary transition-colors" href="#">Intelligence &amp; Health</a>
+<span class="text-outline text-xs">/</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Health Analytics &amp; Adherence</span>
+</nav>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-low rounded-full font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        CareHub Telemetry Sync: Live (2m ago)
+      </span>
+<span class="text-outline-variant hidden sm:inline">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline">Sensor Firmware v4.12-secure</span>
+</div>
+</div>
+<!-- WORKSPACE HEADER & CONTEXT -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[28px]">query_stats</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Health Analytics &amp; Adherence Reporting</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Mathematically reconciled telemetry from CareHub automated pill dispenser, optical tray sensors, and authorized clinical logs. Built strictly on the <span class="font-bold text-primary">Zero-Panic</span> non-punitive caregiver doctrine.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="min-h-[48px] px-space-md bg-surface-container-low text-primary hover:bg-surface-container font-label-lg text-label-lg rounded-xl flex items-center gap-2 transition-all active:scale-[0.98]" id="quickPrintBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Quick Print Summary</span>
+</button>
+<button class="min-h-[48px] px-space-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg rounded-xl flex items-center gap-2 shadow-sm transition-all active:scale-[0.98]" id="openExportModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span>Export &amp; Download Report</span>
+</button>
+</div>
+</div>
+<!-- FILTER BAR -->
+<div class="mt-space-lg pt-space-md border-t-0 bg-surface-container-low/60 rounded-xl p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<!-- Date Range Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1.5" id="dateFilterGroup">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider mr-1">Period:</span>
+<button class="date-tab-btn min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-primary text-on-primary font-semibold transition-all" data-range="7d" type="button">
+          Last 7 Days (Oct 19 - Oct 25)
+        </button>
+<button class="date-tab-btn min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-all" data-range="30d" type="button">
+          Last 30 Days
+        </button>
+<button class="date-tab-btn min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-all" data-range="month" type="button">
+          Monthly (Oct vs Sep)
+        </button>
+<button class="date-tab-btn min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" data-range="custom" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Custom</span>
+</button>
+</div>
+<!-- Dropdown Selectors -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[200px]">
+<label class="sr-only" for="medFilter">Filter by Medication</label>
+<select class="w-full min-h-[44px] pl-3 pr-8 bg-surface-container-lowest rounded-lg font-label-md text-label-md text-on-surface border-0 shadow-sm focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="medFilter">
+<option value="all">All Medications (3 Active)</option>
+<option value="lisinopril">Lisinopril 10mg (AM)</option>
+<option value="metformin">Metformin 500mg (PM)</option>
+<option value="atorvastatin">Atorvastatin 20mg (Night)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative min-w-[180px]">
+<label class="sr-only" for="deptFilter">Filter by Specialty</label>
+<select class="w-full min-h-[44px] pl-3 pr-8 bg-surface-container-lowest rounded-lg font-label-md text-label-md text-on-surface border-0 shadow-sm focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="deptFilter">
+<option value="all">All Specialties</option>
+<option value="cardio">Cardiology</option>
+<option value="geriatric">Geriatrics</option>
+<option value="endo">Endocrinology</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TOP KPI CARDS BENTO (Strictly Reconciled 21 scheduled doses) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md mb-space-lg">
+<!-- Adherence Rate Target -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm xl:col-span-2 flex items-center justify-between gap-space-md relative overflow-hidden">
+<div class="space-y-1 z-10">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          7-Day Adherence Score
+        </span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-bold leading-none">85.7%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold bg-secondary-container px-2 py-0.5 rounded-full">Target &gt;80% Met</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">18 confirmed</span> of 21 scheduled doses.
+          <span class="text-secondary font-semibold">(+3.2% vs prior week)</span>
+</p>
+</div>
+<!-- SVG Circular Progress Ring -->
+<div class="relative w-24 h-24 flex-shrink-0 z-10">
+<svg aria-hidden="true" class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+<circle class="text-surface-container-high" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary transition-all duration-1000" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="35.9" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface leading-none">86%</span>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Target</span>
+</div>
+</div>
+<!-- Decorative ambient halo -->
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+</div>
+<!-- Confirmed Doses -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider">Confirmed</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">/ 21 (85.7%)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          15 on-time + 3 verified in gentle grace window.
+        </p>
+</div>
+</div>
+<!-- Late / Grace Doses -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider">In Grace Window</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">hourglass_top</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">(14.3%)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          Logged within 45-min gentle cushion via tray sensor.
+        </p>
+</div>
+</div>
+<!-- Planned Skips -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider">Authorized Skips</span>
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">event_busy</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">(9.5%)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          Clinically authorized (fasting before Dr. Chen lab).
+        </p>
+</div>
+</div>
+<!-- Unconfirmed Doses (Zero-Panic) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider">Unconfirmed</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">radio_button_checked</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">(4.8%)</span>
+</div>
+<div class="mt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] font-semibold text-primary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            Grace Active (34m)
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-1 leading-tight">
+            Lisinopril AM. Non-punitive: not presumed missed.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE VISUALIZATION SECTION TABS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Telemetry Pattern Analysis</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reconciled adherence dynamics across days, months, status states, and circadian habits.</p>
+</div>
+<!-- Tab Controls -->
+<div class="flex flex-wrap items-center bg-surface-container-low p-1 rounded-xl gap-1" id="vizTabs" role="tablist">
+<button aria-selected="false" class="viz-tab min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-target="panel-7day" role="tab">A. 7-Day Adherence Trend</button>
+<button aria-selected="true" class="viz-tab min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-sm transition-all" data-target="panel-monthly" role="tab">B. Monthly (Oct vs Sep)</button>
+<button aria-selected="false" class="viz-tab min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-target="panel-breakdown" role="tab">
+          C. Dose Status Breakdown
+        </button>
+<button aria-selected="false" class="viz-tab min-h-[44px] px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-target="panel-circadian" role="tab">
+          D. Time-of-Day Rhythm
+        </button>
+</div>
+</div>
+<!-- TAB CONTENT PANELS -->
+<div class="mt-space-md">
+<!-- PANEL A: 7-DAY ADHERENCE TREND (Interactive Daily Bars) -->
+<div class="viz-panel hidden" id="panel-7day"></div>
+<!-- PANEL B: MONTHLY COMPARISON (Oct vs Sep) -->
+<div class="viz-panel block" id="panel-monthly"><div class="flex flex-col xl:flex-row gap-space-lg items-stretch"><div class="flex-1 space-y-space-md"><div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md"><div class="bg-surface-container-low/70 rounded-xl p-space-md border-l-4 border-primary"><div class="flex items-center justify-between"><span class="font-label-sm text-xs text-outline font-bold uppercase tracking-wider">October MTD</span><span class="font-label-sm text-[11px] font-bold text-primary bg-primary/20 px-2 py-0.5 rounded-full">Current</span></div><div class="flex items-baseline gap-2 mt-2"><span class="font-headline-lg text-headline-lg font-bold text-primary">86.4%</span><span class="font-label-sm text-xs text-secondary font-semibold">(72 / 84 Doses)</span></div><p class="font-body-sm text-xs text-on-surface-variant mt-2 leading-relaxed">92% grace recovery • 6 authorized clinic skips</p></div><div class="bg-surface-container-low/50 rounded-xl p-space-md border-l-4 border-outline-variant"><div class="flex items-center justify-between"><span class="font-label-sm text-xs text-outline font-bold uppercase tracking-wider">September Full</span><span class="font-label-sm text-[11px] font-bold text-outline bg-surface-container-high px-2 py-0.5 rounded-full">Baseline</span></div><div class="flex items-baseline gap-2 mt-2"><span class="font-headline-lg text-headline-lg font-bold text-outline">82.1%</span><span class="font-label-sm text-xs text-on-surface-variant font-semibold">(74 / 90 Doses)</span></div><p class="font-body-sm text-xs text-on-surface-variant mt-2 leading-relaxed">84% grace recovery • 8 authorized skips</p></div><div class="bg-secondary-container/40 rounded-xl p-space-md border-l-4 border-secondary flex flex-col justify-between"><div class="flex items-center justify-between"><span class="font-label-sm text-xs text-on-secondary-container font-bold uppercase tracking-wider">Net Shift</span><span class="material-symbols-outlined text-secondary text-[20px]">trending_up</span></div><div class="flex items-baseline gap-2 mt-1"><span class="font-headline-lg text-headline-lg font-bold text-secondary">+4.3%</span><span class="font-label-sm text-xs text-secondary font-semibold">Adherence Gain</span></div><p class="font-body-sm text-xs text-on-surface-variant mt-1 leading-relaxed">On-time lifts: 78% vs 71% • 0 double-doses</p></div></div><div class="bg-surface-container-low/40 rounded-xl p-space-md"><div class="flex flex-wrap items-center justify-between gap-2 mb-space-md"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">bar_chart</span><h4 class="font-label-md text-label-md font-bold text-on-surface">4-Week Cohort Adherence Comparison</h4></div><div class="flex items-center gap-space-md text-xs font-semibold"><span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-primary"></span> October (MTD)</span><span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-secondary-fixed"></span> September (Baseline)</span></div></div><div class="space-y-3.5"><div class="space-y-1.5"><div class="flex items-center justify-between text-xs"><span class="font-bold text-on-surface">Week 1 (Days 1–7)</span><div class="flex items-center gap-3 font-semibold"><span class="text-primary">Oct: 85.0%</span><span class="text-outline">Sep: 80.0%</span><span class="text-secondary text-[11px] font-bold">+5.0%</span></div></div><div class="grid grid-cols-2 gap-2 h-4 bg-surface-container-high rounded-full p-0.5 overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 85%"></div><div class="bg-secondary-fixed h-full rounded-full" style="width: 80%"></div></div></div><div class="space-y-1.5"><div class="flex items-center justify-between text-xs"><span class="font-bold text-on-surface">Week 2 (Days 8–14)</span><div class="flex items-center gap-3 font-semibold"><span class="text-primary">Oct: 88.0%</span><span class="text-outline">Sep: 81.0%</span><span class="text-secondary text-[11px] font-bold">+7.0%</span></div></div><div class="grid grid-cols-2 gap-2 h-4 bg-surface-container-high rounded-full p-0.5 overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 88%"></div><div class="bg-secondary-fixed h-full rounded-full" style="width: 81%"></div></div></div><div class="space-y-1.5"><div class="flex items-center justify-between text-xs"><span class="font-bold text-on-surface">Week 3 (Days 15–21)</span><div class="flex items-center gap-3 font-semibold"><span class="text-primary">Oct: 84.0%</span><span class="text-outline">Sep: 82.0%</span><span class="text-secondary text-[11px] font-bold">+2.0%</span></div></div><div class="grid grid-cols-2 gap-2 h-4 bg-surface-container-high rounded-full p-0.5 overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 84%"></div><div class="bg-secondary-fixed h-full rounded-full" style="width: 82%"></div></div></div><div class="space-y-1.5"><div class="flex items-center justify-between text-xs"><span class="font-bold text-on-surface">Week 4 (Days 22–28)</span><div class="flex items-center gap-3 font-semibold"><span class="text-primary">Oct: 89.0%</span><span class="text-outline">Sep: 85.0%</span><span class="text-secondary text-[11px] font-bold">+4.0%</span></div></div><div class="grid grid-cols-2 gap-2 h-4 bg-surface-container-high rounded-full p-0.5 overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 89%"></div><div class="bg-secondary-fixed h-full rounded-full" style="width: 85%"></div></div></div></div></div></div><div class="xl:w-80 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between"><div class="space-y-3"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Monthly Trend Analysis</span><span class="material-symbols-outlined text-primary text-[18px]">insights</span></div><div><h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Monthly Adherence Insights: Oct vs Sep</h3><div class="inline-flex items-center gap-1.5 mt-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-xs font-bold text-secondary bg-secondary-container"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Trend: +4.3% Steady Progress</div></div><ul class="space-y-2.5 pt-2 text-xs text-on-surface-variant font-body-sm"><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[16px] flex-shrink-0 mt-0.5">check_circle</span><span><strong>Morning Lisinopril:</strong> Consistency improved by 12% following bedside audio prompt synchronization.</span></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0 mt-0.5">check_circle</span><span><strong>Bedtime Atorvastatin:</strong> Routine solidified with chamomile tea cue without late alarm flags.</span></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[16px] flex-shrink-0 mt-0.5">shield</span><span><strong>Grace Cushion:</strong> Stabilization achieved with 0 escalating alarms dispatched to Tier 2 proxy.</span></li></ul></div><div class="pt-4 border-t-0 bg-surface-container-lowest/80 p-3 rounded-lg mt-4"><span class="font-label-sm text-[11px] text-outline font-semibold uppercase tracking-wider block">Care Protocol Note</span><p class="font-body-sm text-xs text-on-surface-variant mt-1 leading-relaxed">Overall routine stability qualified for Dr. Chen 6-month check-in interval recommendation.</p></div></div></div></div>
+<!-- PANEL C: DOSE STATUS BREAKDOWN -->
+<div class="viz-panel hidden" id="panel-breakdown">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md border-l-4 border-primary">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase">On-Time Confirmed</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">71.4%</span>
+</div>
+<p class="font-headline-md text-headline-md font-bold text-on-surface mt-2">15 Doses</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dispenser beam triggered &lt;15 mins from alert.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md border-l-4 border-secondary">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Grace Window</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">14.3%</span>
+</div>
+<p class="font-headline-md text-headline-md font-bold text-on-surface mt-2">3 Doses</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Taken within gentle 45-min window without escalation.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md border-l-4 border-tertiary">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-tertiary uppercase">Clinical Skips</span>
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary">9.5%</span>
+</div>
+<p class="font-headline-md text-headline-md font-bold text-on-surface mt-2">2 Doses</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Authorized fasting skip by cardiology clinic.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md border-l-4 border-outline">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline uppercase">Active Unconfirmed</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.8%</span>
+</div>
+<p class="font-headline-md text-headline-md font-bold text-on-surface mt-2">1 Dose</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Lisinopril AM currently within active grace period.</p>
+</div>
+</div>
+</div>
+<!-- PANEL D: TIME-OF-DAY RHYTHM -->
+<div class="viz-panel hidden" id="panel-circadian">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline font-bold">Morning Regimen</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">light_mode</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">8:00 AM — Lisinopril 10mg</p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">85.7%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">(6 / 7 confirmed)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 85.7%"></div>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant mt-2">1 currently pending in grace window.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md opacity-60">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline font-bold">Afternoon / Noon</span>
+<span class="material-symbols-outlined text-outline text-[20px]">wb_sunny</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">No Active Prescriptions</p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-outline">N/A</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant mt-2">No midday dosage burden currently assigned.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline font-bold">Evening Regimen</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_twilight</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">6:00 PM — Metformin 500mg</p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">100.0%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">(7 / 7 confirmed)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant mt-2">Flawless compliance alongside regular dinner meals.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline font-bold">Night / Bedtime</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">dark_mode</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">9:00 PM — Atorvastatin 20mg</p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">85.7%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">(5 / 7 confirmed)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 85.7%"></div>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant mt-2">2 verified authorized fasting skips; 0 missed.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- DETAILED MEDICATION-LEVEL PERFORMANCE TABLE -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Medication Regimen Adherence Performance</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Granular 7-day breakdown by prescribed compound, verification mode, and telemetry status.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<input class="min-h-[44px] pl-9 pr-3 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline border-0 focus:ring-2 focus:ring-primary w-48 lg:w-64" id="tableSearch" placeholder="Search medication..." type="text">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">search</span>
+</div>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="medTable">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg font-bold">Medication Name &amp; Strength</th>
+<th class="py-3 px-4 font-bold">Regimen Timing</th>
+<th class="py-3 px-4 font-bold text-center">Scheduled</th>
+<th class="py-3 px-4 font-bold text-center">On-Time</th>
+<th class="py-3 px-4 font-bold text-center">Grace</th>
+<th class="py-3 px-4 font-bold text-center">Auth Skips</th>
+<th class="py-3 px-4 font-bold text-center">Unconfirmed</th>
+<th class="py-3 px-4 font-bold text-right">Adherence</th>
+<th class="py-3 px-4 rounded-r-lg font-bold text-right">Telemetry Details</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: Lisinopril -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-4 px-4 font-bold text-on-surface">
+<div class="flex items-center gap-3">
+<span class="w-9 h-9 rounded-lg bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">pill</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold block text-on-surface">Lisinopril 10mg</span>
+<span class="font-label-sm text-xs text-on-surface-variant">Oral Tablet • Blood Pressure</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+                Morning 8:00 AM
+              </span>
+</td>
+<td class="py-4 px-4 text-center font-semibold">7</td>
+<td class="py-4 px-4 text-center font-semibold text-primary">5</td>
+<td class="py-4 px-4 text-center font-semibold text-secondary">1</td>
+<td class="py-4 px-4 text-center text-outline">0</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 text-primary font-bold bg-secondary-fixed/50 px-2 py-0.5 rounded-full text-xs">
+                1 Pending
+              </span>
+</td>
+<td class="py-4 px-4 text-right font-bold text-primary text-label-md">85.7%</td>
+<td class="py-4 px-4 text-right">
+<button class="min-h-[44px] px-3 py-1.5 bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm font-semibold rounded-lg transition-all" onclick="showTelemetryModal('Lisinopril 10mg', 'Optical Tray Beam #1', '98.2% sensor accuracy. Last acknowledged 8:12 AM Oct 22.')" type="button">
+                View Log
+              </button>
+</td>
+</tr>
+<!-- Row 2: Metformin -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-4 px-4 font-bold text-on-surface">
+<div class="flex items-center gap-3">
+<span class="w-9 h-9 rounded-lg bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">medication</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold block text-on-surface">Metformin 500mg</span>
+<span class="font-label-sm text-xs text-on-surface-variant">Oral Tablet • Blood Glucose Regimen</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+                Evening 6:00 PM
+              </span>
+</td>
+<td class="py-4 px-4 text-center font-semibold">7</td>
+<td class="py-4 px-4 text-center font-semibold text-primary">7</td>
+<td class="py-4 px-4 text-center text-outline">0</td>
+<td class="py-4 px-4 text-center text-outline">0</td>
+<td class="py-4 px-4 text-center text-outline">0</td>
+<td class="py-4 px-4 text-right font-bold text-primary text-label-md">100.0%</td>
+<td class="py-4 px-4 text-right">
+<button class="min-h-[44px] px-3 py-1.5 bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm font-semibold rounded-lg transition-all" onclick="showTelemetryModal('Metformin 500mg', 'Chamber #01 RFID Lock', '7/7 verified upon tray opening. Meal co-administered.')" type="button">
+                View Log
+              </button>
+</td>
+</tr>
+<!-- Row 3: Atorvastatin -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-4 px-4 font-bold text-on-surface">
+<div class="flex items-center gap-3">
+<span class="w-9 h-9 rounded-lg bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">vital_signs</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold block text-on-surface">Atorvastatin 20mg</span>
+<span class="font-label-sm text-xs text-on-surface-variant">Oral Tablet • Lipid Management</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+                Bedtime 9:00 PM
+              </span>
+</td>
+<td class="py-4 px-4 text-center font-semibold">7</td>
+<td class="py-4 px-4 text-center font-semibold text-primary">4</td>
+<td class="py-4 px-4 text-center font-semibold text-secondary">1</td>
+<td class="py-4 px-4 text-center font-semibold text-tertiary">2 (Fasting)</td>
+<td class="py-4 px-4 text-center text-outline">0</td>
+<td class="py-4 px-4 text-right font-bold text-primary text-label-md">85.7%</td>
+<td class="py-4 px-4 text-right">
+<button class="min-h-[44px] px-3 py-1.5 bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm font-semibold rounded-lg transition-all" onclick="showTelemetryModal('Atorvastatin 20mg', 'Bedside Hub Optical Sensor', 'Dr. Chen pre-lab skip logged Oct 21 &amp; 23.')" type="button">
+                View Log
+              </button>
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="bg-surface-container-low font-label-md text-label-md text-on-surface font-bold">
+<td class="py-3.5 px-4 rounded-l-lg">Reconciled Total (7 Days)</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-medium">3 Daily Slots</td>
+<td class="py-3.5 px-4 text-center">21</td>
+<td class="py-3.5 px-4 text-center text-primary">16</td>
+<td class="py-3.5 px-4 text-center text-secondary">2</td>
+<td class="py-3.5 px-4 text-center text-tertiary">2</td>
+<td class="py-3.5 px-4 text-center text-primary">1</td>
+<td class="py-3.5 px-4 text-right text-primary text-label-lg font-bold">85.7%</td>
+<td class="py-3.5 px-4 rounded-r-lg text-right text-outline text-xs font-semibold">Status: Balanced</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<!-- TWO-COLUMN SECTION: ZERO-PANIC TIMELINE & APPOINTMENT / FAMILY INSIGHTS -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- EVENT TIMELINE: RECONCILED DOSE & UNCONFIRMED EVENT HISTORY (8 Cols) -->
+<div class="lg:col-span-7 xl:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Reconciled Dose &amp; Event History</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time sensor logs, grace window cushions, and clinical skip verifications.</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-low rounded-full font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+            Zero-Panic Policy
+          </span>
+</div>
+<!-- DOCTRINE BANNER -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-sm mb-space-md flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<span class="font-bold text-on-surface">Zero-Panic Clinical Standard:</span> An unconfirmed dose is never assumed to be missed. Telemetry logs gentle bedside chimes before notifying family proxy Sarah Vance.
+          </p>
+</div>
+<!-- TIMELINE FEED -->
+<div class="space-y-space-md relative before:absolute before:inset-0 before:left-3 before:w-0.5 before:bg-surface-container-high">
+<!-- Item 1: Unconfirmed Grace Active -->
+<div class="relative flex items-start gap-4 pl-8">
+<span class="absolute left-1.5 top-1.5 w-3.5 h-3.5 rounded-full bg-primary ring-4 ring-surface-container-lowest animate-ping"></span>
+<span class="absolute left-1.5 top-1.5 w-3.5 h-3.5 rounded-full bg-primary"></span>
+<div class="flex-1 bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Lisinopril 10mg — Morning Regimen</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">
+                  Grace Window Active
+                </span>
+</div>
+<div class="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-on-surface-variant">
+<span class="font-semibold text-primary">Scheduled: Today, 8:00 AM</span>
+<span>•</span>
+<span>34 mins elapsed in 45m window</span>
+<span>•</span>
+<span>Sensor beam: Awaiting tray lift</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                CareHub dispensed carousel pocket safely. Soft chime played twice. Sarah Vance notified via Tier 1 proxy advisory.
+              </p>
+</div>
+</div>
+<!-- Item 2: Confirmed in Grace Window -->
+<div class="relative flex items-start gap-4 pl-8">
+<span class="absolute left-1.5 top-1.5 w-3.5 h-3.5 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span>
+<div class="flex-1 bg-surface-container-low/50 p-space-md rounded-xl">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Atorvastatin 20mg — Bedtime Regimen</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-secondary font-bold">
+                  Confirmed (Grace Window)
+                </span>
+</div>
+<div class="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-on-surface-variant">
+<span class="font-semibold">Yesterday, 9:00 PM</span>
+<span>•</span>
+<span>Confirmed at 9:40 PM (+40m)</span>
+<span>•</span>
+<span>Optical Sensor #03</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Confirmed via CareHub bedside optical sensor. Eleanor recorded note via voice assistant: <em class="text-on-surface">"Taken after chamomile tea."</em>
+</p>
+</div>
+</div>
+<!-- Item 3: Confirmed On-Time -->
+<div class="relative flex items-start gap-4 pl-8">
+<span class="absolute left-1.5 top-1.5 w-3.5 h-3.5 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<div class="flex-1 bg-surface-container-low/50 p-space-md rounded-xl">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Metformin 500mg — Evening Regimen</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">
+                  Confirmed On-Time
+                </span>
+</div>
+<div class="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-on-surface-variant">
+<span class="font-semibold">Yesterday, 6:00 PM</span>
+<span>•</span>
+<span>Confirmed at 6:04 PM (+4m)</span>
+<span>•</span>
+<span>Chamber RFID Verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Administered alongside evening meal. Eleanor logged full dinner meal compliance.
+              </p>
+</div>
+</div>
+<!-- Item 4: Planned Clinical Skip -->
+<div class="relative flex items-start gap-4 pl-8">
+<span class="absolute left-1.5 top-1.5 w-3.5 h-3.5 rounded-full bg-tertiary ring-4 ring-surface-container-lowest"></span>
+<div class="flex-1 bg-surface-container-low/50 p-space-md rounded-xl">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Atorvastatin 20mg — Clinical Skip</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold">
+                  Authorized Skip
+                </span>
+</div>
+<div class="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-on-surface-variant">
+<span class="font-semibold">Oct 23, 9:00 PM</span>
+<span>•</span>
+<span>Physician Order #DRC-441</span>
+<span>•</span>
+<span>Cardiology Clinic</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Authorized by Dr. Robert Chen for pre-lab metabolic fasting panel. Carousel chamber locked to prevent accidental administration.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md">
+<button class="w-full min-h-[44px] bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md rounded-xl font-bold transition-all" type="button">
+          View Complete 30-Day Sensor Audit Log (84 Events)
+        </button>
+</div>
+</div>
+<!-- SIDEBAR COLUMN: CLINIC ATTENDANCE & CAREGIVER ENGAGEMENT (4/5 Cols) -->
+<div class="lg:col-span-5 xl:col-span-4 space-y-space-lg">
+<!-- CLINIC ATTENDANCE & APPOINTMENT ANALYTICS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Clinic Attendance</h2>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-secondary font-bold">
+            100% Rate
+          </span>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low rounded-xl p-space-sm text-center mb-space-md">
+<div>
+<span class="font-headline-md text-headline-md font-bold text-primary block leading-none">4</span>
+<span class="font-label-sm text-xs text-on-surface-variant font-semibold">Completed</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md font-bold text-outline block leading-none">0</span>
+<span class="font-label-sm text-xs text-on-surface-variant font-semibold">Missed</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md font-bold text-secondary block leading-none">1</span>
+<span class="font-label-sm text-xs text-on-surface-variant font-semibold">Upcoming</span>
+</div>
+</div>
+<!-- UPCOMING VISIT CARD -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md border-l-4 border-primary">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase">Upcoming Appointment</span>
+<span class="font-label-sm text-xs text-secondary font-bold">In 2 Days</span>
+</div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface mt-1">Dr. Robert Chen, MD</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cardiology Review &amp; Lipid Panel</p>
+<div class="mt-3 space-y-1.5 text-xs text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span>
+<span class="font-semibold text-on-surface">Thu, Oct 26 • 10:30 AM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
+<span>St. Jude Heart Center, Suite 402</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">directions_car</span>
+<span>Escort: Sarah Vance (Family Driver)</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-secondary font-bold bg-secondary-fixed/50 px-2 py-0.5 rounded">Fasting Required (4h)</span>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline" href="#">Directions &amp; Notes →</a>
+</div>
+</div>
+</div>
+<!-- FAMILY & CAREGIVER ROLE-GOVERNED AUDIT -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">CareCircle Team Audit</h2>
+<span class="font-label-sm text-label-sm text-outline font-semibold">4 Active Members</span>
+</div>
+<div class="space-y-space-md">
+<!-- Sarah Vance -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary">
+                SV
+              </div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Sarah Vance</span>
+<span class="font-label-sm text-xs text-secondary font-semibold">Daughter • Healthcare Proxy (Tier 1)</span>
+</div>
+</div>
+<span class="font-label-sm text-xs font-bold text-on-surface text-right">
+              14 Confirms<br><span class="text-secondary font-medium">&lt;8m resp.</span>
+</span>
+</div>
+<!-- Eleanor Vance -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center font-bold text-primary">
+                EV
+              </div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Eleanor Vance (Patient)</span>
+<span class="font-label-sm text-xs text-on-surface-variant font-semibold">Sovereign Patient Check-In</span>
+</div>
+</div>
+<span class="font-label-sm text-xs font-bold text-on-surface text-right">
+              12 Tray Lifts<br><span class="text-primary font-medium">3 Voice Logs</span>
+</span>
+</div>
+<!-- Elena Rostova, RN -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed-variant">
+                ER
+              </div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Elena Rostova, RN</span>
+<span class="font-label-sm text-xs text-on-surface-variant font-semibold">Visiting Care Nurse</span>
+</div>
+</div>
+<span class="font-label-sm text-xs font-bold text-on-surface text-right">
+              Replenished<br><span class="text-outline font-medium">Oct 21 Batch</span>
+</span>
+</div>
+<!-- Mark Vance -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-outline">
+                MV
+              </div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Mark Vance</span>
+<span class="font-label-sm text-xs text-on-surface-variant font-semibold">Son • Remote Observer</span>
+</div>
+</div>
+<span class="font-label-sm text-xs font-bold text-on-surface text-right">
+              4 Digests<br><span class="text-outline font-medium">Read-Only</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- EXPORT & PRINTABLE PREVIEW MODAL / DRAWER (Zero-Panic Elder Friendly) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="exportModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col justify-between">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between border-b-0 rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[28px]">description</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Elder-Friendly Printable Health &amp; Adherence Summary</h3>
+<p class="font-label-sm text-xs text-on-surface-variant">Designed for Eleanor, family archives, and Dr. Robert Chen's cardiology chart.</p>
+</div>
+</div>
+<button class="min-h-[48px] min-w-[48px] rounded-lg text-outline hover:text-on-surface flex items-center justify-center transition-colors" id="closeExportModalBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Printable Document Preview Body (Accessible 18px+ styled typography) -->
+<div class="p-space-lg space-y-space-lg text-on-surface" id="printableReportSection">
+<!-- Patient ID Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md bg-surface-container-low/40 p-space-md rounded-xl gap-2">
+<div>
+<span class="font-label-sm text-xs text-secondary font-bold uppercase tracking-wider">Patient Information</span>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">Eleanor Vance, Age 78</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Patient ID: #CC-8842 • Primary Proxy: Sarah Vance (Daughter)</p>
+</div>
+<div class="sm:text-right">
+<span class="font-label-sm text-xs text-outline font-bold uppercase tracking-wider">Audit Window</span>
+<p class="font-headline-sm text-headline-sm font-bold text-primary">Oct 19 — Oct 25, 2023</p>
+<p class="font-body-sm text-xs text-secondary font-semibold">Strict 7-Day Cycle</p>
+</div>
+</div>
+<!-- Metric Highlight Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md text-center">
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<span class="font-label-sm text-xs text-outline font-bold uppercase">Adherence Score</span>
+<p class="font-display-lg text-display-lg font-bold text-primary leading-none mt-1">85.7%</p>
+<span class="font-label-sm text-xs text-secondary font-semibold mt-1 inline-block">18 of 21 confirmed</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<span class="font-label-sm text-xs text-outline font-bold uppercase">Clinical Skips</span>
+<p class="font-display-lg text-display-lg font-bold text-on-surface leading-none mt-1">2</p>
+<span class="font-label-sm text-xs text-on-surface-variant font-semibold mt-1 inline-block">Dr. Chen Lab Protocol</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<div class="font-label-sm text-xs text-outline font-bold uppercase">Clinic Visits</div>
+<p class="font-display-lg text-display-lg font-bold text-primary leading-none mt-1">100%</p>
+<span class="font-label-sm text-xs text-secondary font-semibold mt-1 inline-block">4 of 4 completed YTD</span>
+</div>
+</div>
+<!-- Prescribed Regimen Reconciled -->
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Prescribed Regimens &amp; Verification Telemetry</h4>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-lg text-body-md font-medium">
+<div>
+<span class="font-bold text-on-surface">Lisinopril 10mg (AM)</span>
+<span class="text-xs text-on-surface-variant block">8:00 AM • Optical Tray verified • 85.7% adherence</span>
+</div>
+<span class="font-bold text-primary">6 / 7 Confirmed</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-lg text-body-md font-medium">
+<div>
+<span class="font-bold text-on-surface">Metformin 500mg (PM)</span>
+<span class="text-xs text-on-surface-variant block">6:00 PM • Chamber RFID verified • 100.0% adherence</span>
+</div>
+<span class="font-bold text-primary">7 / 7 Confirmed</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-lg text-body-md font-medium">
+<div>
+<span class="font-bold text-on-surface">Atorvastatin 20mg (Night)</span>
+<span class="text-xs text-on-surface-variant block">9:00 PM • 2 Authorized fasting skips • 85.7% adherence</span>
+</div>
+<span class="font-bold text-primary">5 / 7 Confirmed</span>
+</div>
+</div>
+</div>
+<!-- Attending Physician & Proxy Sign-off Line -->
+<div class="pt-space-md border-t-0 bg-surface-container-low/50 p-space-md rounded-xl flex flex-col sm:flex-row justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-xs text-outline font-bold uppercase tracking-wider block">Clinical Care Provider</span>
+<div class="h-10 border-b border-outline-variant mt-2 flex items-end">
+<span class="font-body-sm text-xs text-on-surface italic font-semibold">Robert Chen, MD (Cardiology)</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline-variant">Date: ________________________</span>
+</div>
+<div>
+<span class="font-label-sm text-xs text-outline font-bold uppercase tracking-wider block">Healthcare Proxy Acknowledgment</span>
+<div class="h-10 border-b border-outline-variant mt-2 flex items-end">
+<span class="font-body-sm text-xs text-on-surface italic font-semibold">Sarah Vance (Healthcare Proxy)</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline-variant">Timestamp: Oct 25, 2023 - 08:34 EDT</span>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm rounded-b-xl">
+<span class="font-label-sm text-xs text-on-surface-variant">Format: Encrypted PDF • CareCircle Audit Standard #CC-2023-A</span>
+<div class="flex items-center gap-space-sm">
+<button class="min-h-[48px] px-space-md bg-surface-container text-primary hover:bg-surface-container-high font-label-md text-label-md rounded-xl font-bold flex items-center gap-1.5 transition-all" id="printReportDocBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Report</span>
+</button>
+<button class="min-h-[48px] px-space-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md rounded-xl font-bold flex items-center gap-1.5 shadow-sm transition-all" id="downloadPdfBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- TELEMETRY SENSOR MODAL (Lightweight Detail Flyout) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="telemetryDetailModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-xs font-bold text-secondary uppercase tracking-wider">Device Telemetry Inspector</span>
+<button class="text-outline hover:text-on-surface" onclick="closeTelemetryModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="telemMedName">Medication</h3>
+<p class="font-label-md text-label-md text-primary font-semibold mt-1" id="telemSensorType">Sensor</p>
+<div class="bg-surface-container-low p-space-md rounded-lg mt-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="telemDetails">Details</p>
+</div>
+<button class="mt-space-md w-full min-h-[48px] bg-primary text-on-primary font-label-md text-label-md font-bold rounded-xl" onclick="closeTelemetryModal()" type="button">
+        Acknowledge Sensor Health
+      </button>
+</div>
+</div>
+<!-- CLIENT-SIDE INTERACTIVITY CONTROLS -->
+<script>
+    // Tab switching for telemetry pattern analysis
+    document.querySelectorAll('.viz-tab').forEach(button => {
+      button.addEventListener('click', () => {
+        // Toggle tab visual state
+        document.querySelectorAll('.viz-tab').forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+          b.setAttribute('aria-selected', 'false');
+        });
+        button.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+        button.classList.remove('text-on-surface-variant');
+        button.setAttribute('aria-selected', 'true');
+
+        // Toggle panel display
+        const targetId = button.getAttribute('data-target');
+        document.querySelectorAll('.viz-panel').forEach(panel => {
+          panel.classList.add('hidden');
+          panel.classList.remove('block');
+        });
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.remove('hidden');
+          targetPanel.classList.add('block');
+        }
+      });
+    });
+
+    // Dynamic 7-day bar inspection
+    function showDayDetails(title, status, desc) {
+      const titleElem = document.getElementById('detailDayTitle');
+      const statusElem = document.getElementById('detailDayStatus');
+      const descElem = document.getElementById('detailDayDesc');
+      if (titleElem) titleElem.textContent = title;
+      if (statusElem) statusElem.textContent = status;
+      if (descElem) descElem.textContent = desc;
+    }
+
+    // Telemetry Modal
+    function showTelemetryModal(medName, sensorType, details) {
+      document.getElementById('telemMedName').textContent = medName;
+      document.getElementById('telemSensorType').textContent = sensorType;
+      document.getElementById('telemDetails').textContent = details;
+      document.getElementById('telemetryDetailModal').classList.remove('hidden');
+    }
+    function closeTelemetryModal() {
+      document.getElementById('telemetryDetailModal').classList.add('hidden');
+    }
+
+    // Export & Print modal controls
+    const exportModal = document.getElementById('exportModal');
+    const openExportModalBtn = document.getElementById('openExportModalBtn');
+    const closeExportModalBtn = document.getElementById('closeExportModalBtn');
+    const quickPrintBtn = document.getElementById('quickPrintBtn');
+    const printReportDocBtn = document.getElementById('printReportDocBtn');
+    const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+
+    if (openExportModalBtn) {
+      openExportModalBtn.addEventListener('click', () => {
+        exportModal.classList.remove('hidden');
+      });
+    }
+
+    if (closeExportModalBtn) {
+      closeExportModalBtn.addEventListener('click', () => {
+        exportModal.classList.add('hidden');
+      });
+    }
+
+    if (quickPrintBtn) {
+      quickPrintBtn.addEventListener('click', () => {
+        exportModal.classList.remove('hidden');
+      });
+    }
+
+    if (printReportDocBtn) {
+      printReportDocBtn.addEventListener('click', () => {
+        window.print();
+      });
+    }
+
+    if (downloadPdfBtn) {
+      downloadPdfBtn.addEventListener('click', () => {
+        const originalText = downloadPdfBtn.innerHTML;
+        downloadPdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> <span>Generating PDF...</span>';
+        setTimeout(() => {
+          downloadPdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span> <span>Downloaded!</span>';
+          setTimeout(() => {
+            downloadPdfBtn.innerHTML = originalText;
+            exportModal.classList.add('hidden');
+          }, 1200);
+        }, 800);
+      });
+    }
+
+    // Date Range Filter Tabs
+    document.querySelectorAll('.date-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.date-tab-btn').forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+    });
+
+    // Table quick search filter
+    const searchInput = document.getElementById('tableSearch');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('#medTable tbody tr');
+        rows.forEach(row => {
+          const text = row.textContent.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
+  </script>
+</div></main></div>
+
+</body></html>

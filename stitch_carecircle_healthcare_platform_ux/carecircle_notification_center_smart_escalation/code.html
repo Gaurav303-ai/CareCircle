@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#e8fef5", "surface-container-low": "#e2f9ef", "secondary": "#006b54", "tertiary-fixed": "#e1e0ff", "on-error-container": "#93000a", "on-surface-variant": "#3e4944", "on-tertiary-fixed-variant": "#2f2ebe", "on-primary-fixed-variant": "#00513f", "on-secondary-container": "#007259", "primary-fixed-dim": "#81d7ba", "inverse-surface": "#21342e", "background": "#e8fef5", "surface-dim": "#c9dfd6", "on-primary-fixed": "#002118", "on-primary": "#ffffff", "primary": "#005b47", "primary-container": "#13755d", "on-primary-container": "#a1f8da", "secondary-container": "#87f7d2", "on-tertiary-container": "#e7e5ff", "on-tertiary-fixed": "#07006c", "surface-container-highest": "#d1e7de", "on-background": "#0c1f1a", "surface-container-lowest": "#ffffff", "tertiary-container": "#5355e0", "outline-variant": "#bec9c3", "on-surface": "#0c1f1a", "on-secondary": "#ffffff", "secondary-fixed": "#87f7d2", "surface-variant": "#d1e7de", "outline": "#6e7a74", "primary-fixed": "#9df3d5", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#00513f", "tertiary-fixed-dim": "#c0c1ff", "surface": "#e8fef5", "secondary-fixed-dim": "#6adab7", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container": "#ddf3ea", "on-error": "#ffffff", "surface-tint": "#006b54", "inverse-primary": "#81d7ba", "inverse-on-surface": "#e0f6ed", "on-secondary-fixed": "#002118", "tertiary": "#3939c7", "surface-container-high": "#d7ede4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "display-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Manrope"], "body-lg": ["Manrope"], "label-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg": ["Plus Jakarta Sans"], "body-xl": ["Manrope"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Manrope"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "600" }], "display-lg": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-xl": ["1.25rem", { "lineHeight": "2rem", "fontWeight": "500" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "500" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-y-auto"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CareCircle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCqnBunvK5NKjhycGIk6O5uA6VEC7HW7mUGUKELn6ucGe3dICz9-OfDE6lc4gjjgw8HcDUBUPEHpjtjlm9MWUvq_BuVJskW64mj7prsgwbJbp7V8cExXxt8mneAnceDyFb3_pbNz7EsqeZ37TQeVPrqLGCr6oxpBROle8j6LGdjvdr3DMt9GJX_NhU1iKwa_Jqw7Gh7Btu3VpIPCDUrYE9ptZcdgA5J9YpEYaYYxLvIbQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight leading-none">CareCircle</span><span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase mt-1">Connected Care</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0 animate-pulse"></span><div class="truncate"><p class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Eleanor Vance, 78</p><p class="font-label-sm text-label-sm text-on-surface-variant truncate">Patient ID #CC-8842</p></div></div><button aria-label="Switch elderly care profile" class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">unfold_more</span></button></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_rgba(15,90,71,0.04)]"><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Main</p><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-md text-label-md flex-1">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medications" href="#"><span class="material-symbols-outlined text-[22px]">medication</span><span class="font-label-md text-label-md flex-1">Medications</span><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">6 Active</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medication-schedule" href="#"><span class="material-symbols-outlined text-[22px]">schedule</span><span class="font-label-md text-label-md flex-1">Medication Schedule</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-[22px]">event</span><span class="font-label-md text-label-md flex-1">Appointments</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Collaboration</p><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="carecircle-members" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-md text-label-md flex-1">CareCircle Members</span><span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">4</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notification-center" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="font-label-md text-label-md flex-1">Notification Center</span><span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full">3</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="activity-history" href="#"><span class="material-symbols-outlined text-[22px]">history</span><span class="font-label-md text-label-md flex-1">Activity History</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Intelligence &amp; Health</p><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="health-insights" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-md text-label-md flex-1">Health Insights</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-care-assistant" href="#"><span class="material-symbols-outlined text-[22px]">smart_toy</span><span class="font-label-md text-label-md flex-1">AI Care Assistant</span><span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">AI</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">System</p><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="material-symbols-outlined text-[22px]">hub</span><span class="font-label-md text-label-md flex-1">Integrations</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings-and-accessibility" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-md text-label-md flex-1">Settings &amp; Accessibility</span></a></div></nav><div class="p-space-md bg-surface-container-lowest"><button class="w-full min-h-[48px] bg-error text-on-error font-label-md text-label-md px-space-md py-space-sm rounded-xl flex items-center justify-center gap-space-xs shadow-[0_4px_16px_-2px_rgba(15,90,71,0.08)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[20px]">emergency</span><span>Emergency Quick-Call</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="w-full relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[22px]">search</span><input class="w-full h-[52px] pl-12 pr-16 bg-surface rounded-xl text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search medications, doctors, logs... ⌘K" type="text"/><kbd class="absolute right-space-md font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2 py-1 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-md py-2 rounded-full"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Vance (Daughter)</span><span class="text-outline text-xs">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Passcode Protected</span></div><div class="flex items-center gap-1 bg-surface rounded-lg p-1"><button class="min-h-[48px] px-3 flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold rounded" title="Change language" type="button"><span class="material-symbols-outlined text-[18px]">translate</span><span>EN</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><button class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded" title="Toggle larger accessible text" type="button"><span class="material-symbols-outlined text-[20px]">format_size</span></button></div><button aria-label="View notifications" class="relative min-h-[48px] min-w-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-5 h-5 bg-error text-on-error font-label-sm text-label-sm rounded-full flex items-center justify-center leading-none font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPyBdl8IKVXaOxmjMYXkmR8B_SvBN9GyoXb64KlfVpmAesnM6kXf4MJRxVm10yABpjH-cRq2ebYiMTYR0U8WzXUriv0hLGoc0amBWy_RMNPELDfJPL4Betn6h_VU0WINDNy071P0cHoc_FsW4HvPVrqLGvjukWBKNwPVvgliaZQasmMJr5ss3sJopDMBLSoR0Y5CoHKeghpjhIcg3JLhuobmk8pqLcPHoxKll2NCYo"/><div class="hidden 2xl:block text-left"><p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Sarah Vance</p><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Primary Caretaker</p></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-surface px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Notification Hub Hero Bar -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span>/</span>
+<span class="text-on-surface font-semibold">Notification Center</span>
+</div>
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">Notification Center &amp; Smart Escalation</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+            3 Actionable Alerts
+          </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Patient ID #CC-8842
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-4xl">
+          Real-time audit of gentle reminders, medication confirmations, and multi-tier family escalation for <span class="font-semibold text-on-surface">Eleanor Vance (78)</span>. Built on clinical zero-panic protocols.
+        </p>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="min-h-[48px] px-space-md py-space-sm bg-surface-container-lowest text-secondary font-label-md text-label-md font-semibold rounded-xl shadow-sm hover:bg-surface-container transition-all flex items-center gap-2 active:scale-95" id="mark-all-read-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+<span>Mark All as Read</span>
+</button>
+<button class="min-h-[48px] px-space-md py-space-sm bg-surface-container-lowest text-secondary font-label-md text-label-md font-semibold rounded-xl shadow-sm hover:bg-surface-container transition-all flex items-center gap-2 active:scale-95" id="open-escalation-policy-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<span>Escalation Policy</span>
+</button>
+<button class="min-h-[48px] px-space-md py-space-sm bg-primary text-on-primary font-label-md text-label-md font-semibold rounded-xl shadow-sm hover:bg-primary-container transition-all flex items-center gap-2 active:scale-95" id="export-log-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span>Export Incident Log</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Zero-Panic Clinical Banner -->
+<div class="mb-space-lg p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[26px]">health_and_safety</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Zero-Panic Escalation Doctrine</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wide font-bold">Standard Safety Rule</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="font-bold text-primary">Unconfirmed does NOT mean missed.</span> A dose is only marked unconfirmed pending gentle check-in or caregiver verification. <span class="font-bold text-error">NEVER</span> instruct or recommend double dosing or taking an additional dose if a dose schedule has passed.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<button class="min-h-[48px] px-4 py-2 bg-surface-container text-secondary font-label-sm text-label-sm font-bold rounded-lg hover:bg-surface-variant transition-colors flex items-center gap-1.5" onclick="document.getElementById('policy-drawer').classList.remove('translate-x-full');" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Review Protocol</span>
+</button>
+</div>
+</div>
+<!-- KPI Metric Bento Grid (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- KPI 1: All Notifications -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">All Notifications</p>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">28</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Total Logged</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">inbox</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+4 vs last week</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">7-day audit</span>
+</div>
+</div>
+<!-- KPI 2: Unread Alerts (Action Required) -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Unread Alerts</p>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-error" id="kpi-unread-count">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Pending Review</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">notification_important</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+          2 Priority Check-ins
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold">Tier 1 Active</span>
+</div>
+</div>
+<!-- KPI 3: Medication Alerts -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Medication Alerts</p>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">6</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active This Week</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">medication</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+          0 Critical Lapses
+        </span>
+<span class="font-label-sm text-label-sm text-outline">100% Grace Follow-up</span>
+</div>
+</div>
+<!-- KPI 4: Appointment Logistics -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Appointment Alerts</p>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">2</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Scheduled</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Dr. Chen (Oct 26 Cardiology)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">2d away</span>
+</div>
+</div>
+</div>
+<!-- Filter & Control Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm mb-space-lg space-y-space-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<!-- Status Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 lg:pb-0" id="filter-tabs">
+<button class="filter-tab active-tab px-4 py-2.5 rounded-xl font-label-md text-label-md font-semibold bg-primary text-on-primary transition-all flex items-center gap-1.5 flex-shrink-0" data-filter="all" type="button">
+<span>All</span>
+<span class="bg-primary-container text-on-primary-container px-2 py-0.5 rounded-full text-xs">28</span>
+</button>
+<button class="filter-tab px-4 py-2.5 rounded-xl font-label-md text-label-md font-semibold text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5 flex-shrink-0" data-filter="unread" type="button">
+<span>Unread</span>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded-full text-xs font-bold" id="badge-unread-tab">3</span>
+</button>
+<button class="filter-tab px-4 py-2.5 rounded-xl font-label-md text-label-md font-semibold text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5 flex-shrink-0" data-filter="medication" type="button">
+<span>Medication Alerts</span>
+<span class="bg-surface-container text-on-surface px-2 py-0.5 rounded-full text-xs">6</span>
+</button>
+<button class="filter-tab px-4 py-2.5 rounded-xl font-label-md text-label-md font-semibold text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5 flex-shrink-0" data-filter="appointment" type="button">
+<span>Appointment Logistics</span>
+<span class="bg-surface-container text-on-surface px-2 py-0.5 rounded-full text-xs">8</span>
+</button>
+<button class="filter-tab px-4 py-2.5 rounded-xl font-label-md text-label-md font-semibold text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5 flex-shrink-0" data-filter="system" type="button">
+<span>System &amp; Sensors</span>
+<span class="bg-surface-container text-on-surface px-2 py-0.5 rounded-full text-xs">14</span>
+</button>
+</div>
+<!-- Quick Search Bar -->
+<div class="relative w-full lg:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface rounded-xl text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" id="notification-search" placeholder="Search alerts, doses, members..." type="text"/>
+</div>
+</div>
+<!-- Secondary Filters: Urgency and Channel -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="text-outline uppercase tracking-wider font-bold">Priority:</span>
+<button class="priority-btn active-pill px-3 py-1.5 rounded-lg bg-surface-container font-semibold text-on-surface" data-priority="all" type="button">All</button>
+<button class="priority-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container" data-priority="high" type="button">High (Escalation Active)</button>
+<button class="priority-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container" data-priority="medium" type="button">Medium (Gentle Reminder)</button>
+<button class="priority-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container" data-priority="low" type="button">Low (Informational)</button>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="text-outline uppercase tracking-wider font-bold">Channels:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface rounded-md text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">tablet</span> CareHub Tablet
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface rounded-md text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">sms</span> SMS P2P
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface rounded-md text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">mail</span> Email Digest
+        </span>
+</div>
+</div>
+</div>
+<!-- Central Two-Column Architecture -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Live Notification Stream (65% width approx 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Live Notification Stream</h2>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-outline">Real-time sync</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Sort: <strong class="text-on-surface">Most Urgent First</strong></span>
+</div>
+</div>
+<!-- STREAM ITEMS CONTAINER -->
+<div class="space-y-space-md" id="notification-items-list">
+<!-- ITEM 1: Unconfirmed Lisinopril Dose (High Attention) -->
+<article class="notification-card p-space-md lg:p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="medication" data-priority="high" data-read="false">
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="w-2.5 h-2.5 rounded-full bg-error flex-shrink-0" title="Unread high alert"></span>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                Grace Window Active (32m elapsed)
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">
+                Medication Check-in
+              </span>
+<span class="text-outline font-label-sm text-label-sm">Today, 8:32 AM (Scheduled for 8:00 AM)</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('item-1')" title="Audit Alert Traces" type="button">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+<button class="min-h-[44px] px-3 flex items-center gap-1 rounded-lg text-secondary hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors" onclick="markCardAsRead(this)" title="Mark as Checked" type="button">
+<span class="material-symbols-outlined text-[18px]">done</span>
+<span class="hidden sm:inline">Acknowledge</span>
+</button>
+</div>
+</div>
+<!-- Alert Content Header -->
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-2">
+<span>Gentle Dose Check-in: Lisinopril 10mg (Morning Dose)</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Scheduled morning cardiac regimen for Eleanor Vance. Bedside CareHub chime emitted at 8:00 AM with soft chime sequence. Awaiting manual pill tray removal sensor or screen confirmation.
+              </p>
+</div>
+<div class="flex-shrink-0 p-3 rounded-xl bg-surface-container-low text-center min-w-[130px]">
+<span class="font-label-sm text-label-sm text-outline uppercase block font-bold">Escalation Tier</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary block mt-0.5">Tier 1</span>
+<span class="text-xs text-on-surface-variant">Sarah Vance Notified</span>
+</div>
+</div>
+<!-- Dignity & Safety Callout Box -->
+<div class="p-space-sm rounded-xl bg-surface-container mb-space-md flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">verified_user</span>
+<div class="text-sm font-body-sm">
+<span class="font-bold text-secondary">Unconfirmed ≠ Missed:</span> Eleanor may simply be finishing breakfast or resting. Tier 2 escalation to Mark Vance will remain on hold until the 45-minute grace period expires at 8:45 AM. <em>Never advise taking an extra dose.</em>
+</div>
+</div>
+<!-- Escalation Progress Track -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between text-xs font-label-sm text-outline mb-1.5">
+<span>Escalation Timeline: 32m of 45m Grace Window</span>
+<span class="text-error font-bold">13m remaining until Tier 2</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-error transition-all duration-500" style="width: 71%;"></div>
+</div>
+</div>
+<!-- Bottom Action Buttons & Recipients -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm text-outline">Recipients:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Sarah Vance (App Push)
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface text-outline font-label-sm text-label-sm">
+                Mark Vance (Pending T+45m)
+              </span>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<button class="min-h-[48px] px-4 py-2 rounded-xl bg-surface-container text-secondary font-label-md text-label-md font-bold hover:bg-surface-variant transition-colors flex items-center gap-1.5" onclick="triggerVoicePromptModal('Lisinopril 10mg')" type="button">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+<span>Send Gentle Voice Prompt</span>
+</button>
+<button class="min-h-[48px] px-5 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm transition-all flex items-center gap-1.5 active:scale-95" onclick="confirmDoseModal('Lisinopril 10mg', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Confirm Taken with Eleanor</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 2: Upcoming Appointment Chaperone Check (Cardiology) -->
+<article class="notification-card p-space-md lg:p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="appointment" data-priority="high" data-read="false">
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="w-2.5 h-2.5 rounded-full bg-error flex-shrink-0" title="Unread alert"></span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span>
+                Appointment Logistics: In 2 Days
+              </span>
+<span class="text-outline font-label-sm text-label-sm">Today, 7:45 AM</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('item-2')" title="View Logistics Trace" type="button">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+<button class="min-h-[44px] px-3 flex items-center gap-1 rounded-lg text-secondary hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors" onclick="markCardAsRead(this)" title="Acknowledge" type="button">
+<span class="material-symbols-outlined text-[18px]">done</span>
+<span class="hidden sm:inline">Acknowledge</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                Cardiology Consultation &amp; Transit Escort: Dr. Robert Chen, MD
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Scheduled for <strong class="text-on-surface">Thursday, Oct 26 at 10:30 AM</strong> at St. Jude Medical Pavilion. 4-hour fasting protocol required for Eleanor Vance. Door-to-door transit needs driver confirmation.
+              </p>
+</div>
+<div class="flex-shrink-0 p-3 rounded-xl bg-surface-container-low text-center min-w-[130px]">
+<span class="font-label-sm text-label-sm text-outline uppercase block font-bold">Transit Escort</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary block mt-0.5">Assigned</span>
+<span class="text-xs text-on-surface-variant">Sarah Vance (Driver)</span>
+</div>
+</div>
+<!-- Channel Dispatch Audit -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs mb-space-md">
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">outgoing_mail</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Clinic Instructions PDF</p>
+<p class="text-xs text-on-surface-variant">Delivered to Sarah &amp; Mark Vance</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Sent 10:14 AM</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">sms</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">SMS Reminder Link</p>
+<p class="text-xs text-on-surface-variant">Caregiver mobile dispatch</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Confirmed</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">Clinical Prep:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold bg-surface-container px-2 py-0.5 rounded">Fasting after 6:30 AM</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="min-h-[48px] px-4 py-2 rounded-xl bg-surface-container text-secondary font-label-md text-label-md font-bold hover:bg-surface-variant transition-colors flex items-center gap-1.5" onclick="alert('Viewing Dr. Chen Logistics Dossier: Clinic 4B, St. Jude Pavilion.')" type="button">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>View Clinic Route &amp; Prep</span>
+</button>
+<button class="min-h-[48px] px-4 py-2 rounded-xl bg-surface-container-low text-primary font-label-md text-label-md font-bold hover:bg-surface-container transition-colors flex items-center gap-1.5" onclick="alert('SMS Chaperone re-ping sent to Sarah Vance (+1-555-019-4821)')" type="button">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Resend Driver SMS</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 3: Smart Dispenser Battery & Sensor Sync (Medium Attention) -->
+<article class="notification-card p-space-md lg:p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="system" data-priority="medium" data-read="false">
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0" title="Unread alert"></span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sensors</span>
+                Device Telemetry Update
+              </span>
+<span class="text-outline font-label-sm text-label-sm">Yesterday, 9:15 PM</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('item-3')" title="Device Telemetry" type="button">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+<button class="min-h-[44px] px-3 flex items-center gap-1 rounded-lg text-secondary hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors" onclick="markCardAsRead(this)" title="Acknowledge" type="button">
+<span class="material-symbols-outlined text-[18px]">done</span>
+<span class="hidden sm:inline">Acknowledge</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                CareHub Smart Dispenser: Chamber #04 Sensor Sync &amp; Low Reserve Warning
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Chamber #04 (Atorvastatin 20mg) RFID sensor scanned by visiting nurse <strong class="text-on-surface">Elena Rostova, RN</strong>. Tray has 5 days of reserve pills remaining before monthly pharmacy renewal.
+              </p>
+</div>
+<div class="flex-shrink-0 p-3 rounded-xl bg-surface-container text-center min-w-[130px]">
+<span class="font-label-sm text-label-sm text-outline uppercase block font-bold">Chamber Reserve</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary block mt-0.5">5 Days Left</span>
+<span class="text-xs text-on-surface-variant">Refill: Oct 31</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-3 text-xs text-on-surface-variant font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">battery_horiz_075</span> Hub Battery: 88%</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">wifi</span> Signal: Excellent (-54 dBm)</span>
+</div>
+<button class="min-h-[48px] px-4 py-2 rounded-xl bg-surface-container text-secondary font-label-md text-label-md font-bold hover:bg-surface-variant transition-colors flex items-center gap-1.5" onclick="alert('Refill order dispatch request sent to Walgreens Health #1042 for Atorvastatin 20mg (Rx #99321).')" type="button">
+<span class="material-symbols-outlined text-[18px]">local_pharmacy</span>
+<span>Trigger Early Pharmacy Refill</span>
+</button>
+</div>
+</article>
+<!-- ITEM 4: Metformin Confirmed (Read, Resolved) -->
+<article class="notification-card p-space-md lg:p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm opacity-80 hover:opacity-100 transition-opacity" data-category="medication" data-priority="low" data-read="true">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Dose Confirmed &amp; Logged
+              </span>
+<span class="text-outline font-label-sm text-label-sm">Yesterday, 7:12 PM</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              CareHub Sensor Lift
+            </span>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                Metformin 500mg Evening Dose Safely Completed
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Eleanor Vance lifted Chamber #01 tray at 7:12 PM. Verified by bedside smart optical sensor. Confirmation push delivered to Sarah Vance without requiring secondary escalation.
+              </p>
+</div>
+</div>
+</article>
+<!-- ITEM 5: Flu Vaccination Record Synced (Read, Resolved) -->
+<article class="notification-card p-space-md lg:p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm opacity-80 hover:opacity-100 transition-opacity" data-category="system" data-priority="low" data-read="true">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud_sync</span>
+                EHR Record Synced
+              </span>
+<span class="text-outline font-label-sm text-label-sm">Oct 12, 11:30 AM</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-medium">St. Jude Medical Center</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+              Seasonal High-Dose Influenza Vaccination Record Archived
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Annual senior flu immunization record imported via FHIR / HL7 bridge. Immunization verified by Elena Rostova, RN. No adverse effects reported.
+            </p>
+</div>
+</article>
+<!-- ITEM 6: Atorvastatin Grace Period Check-in (Read, Resolved) -->
+<article class="notification-card p-space-md lg:p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm opacity-80 hover:opacity-100 transition-opacity" data-category="medication" data-priority="medium" data-read="true">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+                Resolved Check-in
+              </span>
+<span class="text-outline font-label-sm text-label-sm">Oct 8, 9:40 PM</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">
+              Grace Follow-up Successful
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+              Atorvastatin 20mg Grace Period Check-in Logged
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Dose was taken at 9:40 PM following a gentle voice prompt via CareHub. Eleanor verbally confirmed: <em>“Took it right after my chamomile tea.”</em> Adherence doctrine enforced: <span class="font-semibold text-primary">No double dosing scheduled.</span>
+</p>
+</div>
+</article>
+</div>
+</div>
+<!-- RIGHT COLUMN: Escalation Engine, Delivery Status & Controls (35% approx 4 cols) -->
+<div class="lg:col-span-4 space-y-space-md">
+<!-- CARD A: Smart Multi-Tier Escalation Protocol -->
+<section class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">account_tree</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Escalation Protocol</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+            Active
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          How CareCircle protects Eleanor's dignity through phased, calm escalation without false alarms.
+        </p>
+<!-- Stepped Flow List -->
+<div class="space-y-space-md relative pl-2">
+<!-- Step 1 (T-0) -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs flex-shrink-0 shadow-sm z-10">
+              1
+            </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Eleanor Vance (Bedside)</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">T-0m</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Gentle warm chime on CareHub tablet, illuminated pill tray light. No loud buzzer.
+              </p>
+</div>
+</div>
+<!-- Step 2 (T+30) Active State -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs flex-shrink-0 shadow-sm z-10 animate-pulse">
+              2
+            </div>
+<div class="flex-1 p-space-xs rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md font-bold text-primary">Sarah Vance (Primary)</h3>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">Current Tier</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Discreet in-app push notification: <em>“Eleanor's morning routine is pending verification.”</em>
+</p>
+</div>
+</div>
+<!-- Step 3 (T+60) -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-bold text-xs flex-shrink-0 z-10 flex items-center justify-center">
+              3
+            </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Mark Vance (Remote)</h3>
+<span class="font-label-sm text-label-sm text-outline font-semibold">T+60m</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Scoped family email notification and calm reassurance ping.
+              </p>
+</div>
+</div>
+<!-- Step 4 (T+90) -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-bold text-xs flex-shrink-0 z-10 flex items-center justify-center">
+              4
+            </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Clinical Escort / RN</h3>
+<span class="font-label-sm text-label-sm text-outline font-semibold">T+90m</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Elena Rostova, RN dispatch ping or telephone triage outreach.
+              </p>
+</div>
+</div>
+</div>
+<!-- Strict Safety Rule Box -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container text-on-surface">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-bold text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Clinical Adherence Rule</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            If a scheduled dose passes the safety interval, CareCircle instructs caregivers to <strong>skip to the next dose</strong> and contact Dr. Robert Chen. <strong>Never take two doses at once.</strong>
+</p>
+</div>
+</section>
+<!-- CARD B: Multi-Channel Delivery Audit Status -->
+<section class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">hub</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Delivery Audit</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            All Gateways Online
+          </span>
+</div>
+<div class="space-y-space-sm">
+<!-- Sarah Vance Email -->
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between gap-2">
+<div class="truncate">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">mail</span>
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Sarah Vance</span>
+</div>
+<p class="text-xs text-outline truncate">sarah.vance@familycare.org</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex-shrink-0">
+              Read 8:14 AM
+            </span>
+</div>
+<!-- Mark Vance Email -->
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between gap-2">
+<div class="truncate">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">outgoing_mail</span>
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Mark Vance</span>
+</div>
+<p class="text-xs text-outline truncate">mark.vance@workmail.com</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex-shrink-0">
+              Delivered
+            </span>
+</div>
+<!-- Elena Rostova RN -->
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between gap-2">
+<div class="truncate">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">medical_services</span>
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Elena Rostova, RN</span>
+</div>
+<p class="text-xs text-outline truncate">EHR Secure Clinical Routing</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium flex-shrink-0">
+              Standing By
+            </span>
+</div>
+<!-- Gateway Specs -->
+<div class="pt-space-xs space-y-1.5 text-xs text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Twilio HIPAA SMS Gateway:</span>
+<span class="font-bold text-secondary">99.98% Latency 240ms</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Bedside Tablet BLE Mesh:</span>
+<span class="font-bold text-secondary">Connected (Floor 1 Bedroom)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CARD C: Escalation Preferences & Timing Controls -->
+<section class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Escalation Timing</h2>
+</div>
+<button class="text-secondary hover:text-primary font-label-sm text-label-sm font-bold" onclick="alert('Timing presets saved successfully.')" type="button">Save</button>
+</div>
+<div class="space-y-space-md">
+<!-- Grace Period Selector -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold mb-2">Grace Window Duration</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="grace-btn min-h-[48px] px-2 py-2 rounded-xl bg-surface-container font-label-sm text-label-sm font-bold text-on-surface hover:bg-surface-variant transition-colors" type="button">
+                30 Mins
+              </button>
+<button class="grace-btn min-h-[48px] px-2 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">
+                45 Mins
+              </button>
+<button class="grace-btn min-h-[48px] px-2 py-2 rounded-xl bg-surface-container font-label-sm text-label-sm font-bold text-on-surface hover:bg-surface-variant transition-colors" type="button">
+                60 Mins
+              </button>
+</div>
+<p class="text-xs text-outline mt-1.5">Default grace window before Tier 2 caregiver notifications begin.</p>
+</div>
+<!-- Quiet Hours -->
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Night Quiet Hours</p>
+<p class="text-xs text-outline">10:00 PM – 7:00 AM (Bedside silent)</p>
+</div>
+<div class="flex items-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Active</span>
+</div>
+</div>
+<!-- Voice Chime Preference -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold mb-2">Bedside Audio Style</label>
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">music_note</span>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface">Warm Wooden Chime</p>
+<p class="text-xs text-outline">Followed by polite voice prompt</p>
+</div>
+</div>
+<button class="min-h-[48px] px-3 py-1 bg-surface-container text-secondary font-label-sm text-label-sm font-bold rounded-lg hover:bg-surface-variant transition-colors flex items-center gap-1" onclick="playAudioTestDemo()" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span>Test</span>
+</button>
+</div>
+</div>
+<!-- Emergency Override Button -->
+<div class="pt-2">
+<button class="w-full min-h-[48px] px-4 py-2.5 rounded-xl bg-surface-container text-error font-label-md text-label-md font-bold hover:bg-error-container hover:text-on-error-container transition-colors flex items-center justify-center gap-2" onclick="openDispatchOverrideModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span>Manual Emergency Escalation</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- INTERACTIVE MODAL 1: Dose Confirmation Dialog -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-on-background/50 backdrop-blur-sm" id="dose-confirm-modal">
+<div class="w-full max-w-lg rounded-2xl bg-surface-container-lowest p-space-lg shadow-xl relative animate-in fade-in duration-200">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Confirm Dose Administration</h3>
+<p class="font-label-sm text-label-sm text-outline">Patient: Eleanor Vance (78)</p>
+</div>
+</div>
+<button class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-outline hover:text-on-surface" onclick="closeModal('dose-confirm-modal')" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-bold text-primary" id="modal-med-name">Lisinopril 10mg (Morning Dose)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">Chamber 02</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">Scheduled: 8:00 AM • Grace Window Remaining: 13 mins</p>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-bold text-on-surface mb-1">Confirmation Method</label>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 text-primary accent-primary" name="confirm-method" type="radio" value="verbal"/>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Spoke with Eleanor in person or by phone</span>
+<span class="text-xs text-outline block">She confirmed taking the capsule with water</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 text-primary accent-primary" name="confirm-method" type="radio" value="visual"/>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Physical tray verified empty</span>
+<span class="text-xs text-outline block">Caregiver or nurse verified compartment 02 empty</span>
+</div>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-bold text-on-surface mb-1">Optional Clinical Care Note</label>
+<input class="w-full h-11 px-3 bg-surface rounded-xl text-on-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary" id="confirm-dose-note" placeholder="e.g., Ate toast and oatmeal prior to medication" type="text"/>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container text-xs text-on-surface-variant">
+<strong>Zero-Panic Verification:</strong> Marking this taken immediately clears the Tier 1 alert across Sarah Vance's mobile devices and halts Tier 2 SMS transmission.
+        </div>
+</div>
+<div class="mt-space-lg flex items-center justify-end gap-2">
+<button class="min-h-[48px] px-4 rounded-xl text-on-surface-variant font-label-md text-label-md font-semibold hover:bg-surface-container" onclick="closeModal('dose-confirm-modal')" type="button">Cancel</button>
+<button class="min-h-[48px] px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm flex items-center gap-2 active:scale-95" onclick="executeDoseConfirmed()" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Record Confirmation</span>
+</button>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE MODAL 2: Send Gentle Voice Prompt to CareHub -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-on-background/50 backdrop-blur-sm" id="voice-prompt-modal">
+<div class="w-full max-w-md rounded-2xl bg-surface-container-lowest p-space-lg shadow-xl relative animate-in fade-in duration-200">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Bedside Gentle Prompt</h3>
+<p class="font-label-sm text-label-sm text-outline">CareHub Room Audio</p>
+</div>
+</div>
+<button class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-outline hover:text-on-surface" onclick="closeModal('voice-prompt-modal')" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          This plays a soft musical tone followed by a gentle conversational reminder on Eleanor's bedside screen.
+        </p>
+<div>
+<label class="block font-label-sm text-label-sm font-bold text-on-surface mb-1">Preset Voice Message</label>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 text-primary accent-primary" name="voice-prompt-msg" type="radio" value="morning"/>
+<span class="font-body-sm text-body-sm text-on-surface">“Good morning Eleanor. Whenever you are ready, your morning Lisinopril is waiting for you with a glass of water.”</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 text-primary accent-primary" name="voice-prompt-msg" type="radio" value="personal"/>
+<span class="font-body-sm text-body-sm text-on-surface">“Hi mom! Just checking in. Remember to take your morning pill after breakfast.” (Recorded by Sarah)</span>
+</label>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-end gap-2">
+<button class="min-h-[48px] px-4 rounded-xl text-on-surface-variant font-label-md text-label-md font-semibold hover:bg-surface-container" onclick="closeModal('voice-prompt-modal')" type="button">Cancel</button>
+<button class="min-h-[48px] px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container shadow-sm flex items-center gap-2 active:scale-95" onclick="executeVoicePromptSent()" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span>Broadcast to Hub</span>
+</button>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE MODAL 3: Notification Trace Inspection -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-on-background/50 backdrop-blur-sm" id="detail-modal">
+<div class="w-full max-w-xl rounded-2xl bg-surface-container-lowest p-space-lg shadow-xl relative animate-in fade-in duration-200">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">history_edu</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="detail-modal-title">Alert Telemetry Trace</h3>
+<p class="font-label-sm text-label-sm text-outline" id="detail-modal-subtitle">Log Reference #ALT-9942-EL</p>
+</div>
+</div>
+<button class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-outline hover:text-on-surface" onclick="closeModal('detail-modal')" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm text-sm" id="detail-modal-body">
+<div class="p-3 rounded-xl bg-surface">
+<span class="font-label-sm text-label-sm text-outline block font-bold">Event Type</span>
+<span class="font-bold text-on-surface">Medication Regimen Verification</span>
+</div>
+<div class="p-3 rounded-xl bg-surface">
+<span class="font-label-sm text-label-sm text-outline block font-bold">Hardware Dispatch</span>
+<span>Bedside CareHub BLE Beacon &amp; Optical Tray Detector</span>
+</div>
+<div class="p-3 rounded-xl bg-surface">
+<span class="font-label-sm text-label-sm text-outline block font-bold">Escalation State</span>
+<span class="text-secondary font-bold">Tier 1 active, pending 45-minute caregiver grace boundary</span>
+</div>
+</div>
+<div class="mt-space-lg flex justify-end">
+<button class="min-h-[48px] px-6 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-bold hover:bg-surface-variant" onclick="closeModal('detail-modal')" type="button">Close</button>
+</div>
+</div>
+</div>
+<!-- SLIDE-OVER DRAWER: Escalation Policy Deep Dive -->
+<aside class="fixed top-0 right-0 h-full w-full max-w-md bg-surface-container-lowest z-50 shadow-2xl p-space-lg flex flex-col justify-between transform translate-x-full transition-transform duration-300 overflow-y-auto" id="policy-drawer">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[26px]">policy</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Zero-Panic Clinical Protocol</h2>
+</div>
+<button class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-outline hover:text-on-surface" onclick="document.getElementById('policy-drawer').classList.add('translate-x-full')" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<h3 class="font-label-md text-label-md font-bold text-primary mb-1">Why “Zero-Panic” Matters</h3>
+<p>
+            Elderly individuals frequently skip or delay dosing by 15-40 minutes without clinical harm. Bombarding family members with emergency alerts triggers caregiver burnout and causes severe distress for patients.
+          </p>
+</div>
+<div class="space-y-2">
+<h3 class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Protocol Pillars</h3>
+<ul class="space-y-2 list-disc list-inside">
+<li><strong>Grace Window:</strong> Default 45 minutes where reminders stay gentle and local to Eleanor's room.</li>
+<li><strong>Single Responsible Party:</strong> Only Sarah Vance receives Tier 1 nudges to avoid simultaneous chaotic calls.</li>
+<li><strong>No Double-Dose Directive:</strong> If a scheduled dosage passes the safe interval, the system locks the chamber and schedules clinical follow-up.</li>
+</ul>
+</div>
+<div class="p-space-sm rounded-xl bg-surface">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block">Physician Authorization</span>
+<p class="text-xs text-outline mt-0.5">Approved by Dr. Robert Chen, MD • Oct 1, 2023</p>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full min-h-[48px] rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container" onclick="document.getElementById('policy-drawer').classList.add('translate-x-full')" type="button">
+        Understood &amp; Close
+      </button>
+</div>
+</aside>
+<!-- Toast Notification element -->
+<div class="fixed bottom-6 right-6 z-50 hidden items-center gap-2 px-4 py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-lg font-label-md text-label-md transition-all" id="toast">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">check_circle</span>
+<span id="toast-text">Action completed successfully.</span>
+</div>
+</div>
+<script>
+  // Filter tab interactions
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const cards = document.querySelectorAll('.notification-card');
+  const searchInput = document.getElementById('notification-search');
+  const priorityButtons = document.querySelectorAll('.priority-btn');
+
+  let currentCategory = 'all';
+  let currentPriority = 'all';
+
+  function applyFilters() {
+    const searchTerm = (searchInput ? searchInput.value : '').toLowerCase().trim();
+
+    cards.forEach(card => {
+      const category = card.getAttribute('data-category');
+      const priority = card.getAttribute('data-priority');
+      const isRead = card.getAttribute('data-read') === 'true';
+      const textContent = card.textContent.toLowerCase();
+
+      let matchCategory = true;
+      if (currentCategory === 'unread') {
+        matchCategory = !isRead;
+      } else if (currentCategory !== 'all') {
+        matchCategory = (category === currentCategory);
+      }
+
+      let matchPriority = true;
+      if (currentPriority !== 'all') {
+        matchPriority = (priority === currentPriority);
+      }
+
+      let matchSearch = true;
+      if (searchTerm) {
+        matchSearch = textContent.includes(searchTerm);
+      }
+
+      if (matchCategory && matchPriority && matchSearch) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.classList.remove('bg-primary', 'text-on-primary', 'active-tab');
+        t.classList.add('text-on-surface-variant');
+      });
+      tab.classList.add('bg-primary', 'text-on-primary', 'active-tab');
+      tab.classList.remove('text-on-surface-variant');
+
+      currentCategory = tab.getAttribute('data-filter');
+      applyFilters();
+    });
+  });
+
+  priorityButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      priorityButtons.forEach(b => {
+        b.classList.remove('bg-surface-container', 'font-semibold', 'text-on-surface');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container', 'font-semibold', 'text-on-surface');
+      btn.classList.remove('text-on-surface-variant');
+
+      currentPriority = btn.getAttribute('data-priority');
+      applyFilters();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+  }
+
+  // Grace Buttons Selection
+  const graceButtons = document.querySelectorAll('.grace-btn');
+  graceButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      graceButtons.forEach(b => {
+        b.className = 'grace-btn min-h-[48px] px-2 py-2 rounded-xl bg-surface-container font-label-sm text-label-sm font-bold text-on-surface hover:bg-surface-variant transition-colors';
+      });
+      btn.className = 'grace-btn min-h-[48px] px-2 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm';
+      showToast('Grace window timing updated to ' + btn.textContent.trim());
+    });
+  });
+
+  // Modal helpers
+  function closeModal(id) {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('hidden');
+  }
+
+  function openDetailModal(itemId) {
+    const modal = document.getElementById('detail-modal');
+    const title = document.getElementById('detail-modal-title');
+    const subtitle = document.getElementById('detail-modal-subtitle');
+    const body = document.getElementById('detail-modal-body');
+
+    if (itemId === 'item-1') {
+      title.textContent = 'Lisinopril 10mg Dose Dispatch Telemetry';
+      subtitle.textContent = 'CareHub Event #MED-8842-LIS';
+      body.innerHTML = `
+        <div class="p-3 rounded-xl bg-surface">
+          <span class="font-label-sm text-label-sm text-outline block font-bold">Local Room Event</span>
+          <span class="font-bold text-on-surface">8:00:03 AM — Soft Bedside Chime broadcast (72dB ambient)</span>
+        </div>
+        <div class="p-3 rounded-xl bg-surface">
+          <span class="font-label-sm text-label-sm text-outline block font-bold">Caregiver Push Status</span>
+          <span class="text-secondary font-bold">8:30:00 AM — Delivered to Sarah Vance iPhone 15 Pro via APNS</span>
+        </div>
+        <div class="p-3 rounded-xl bg-surface">
+          <span class="font-label-sm text-label-sm text-outline block font-bold">Escalation Safety Window</span>
+          <span>Tier 2 (Mark Vance SMS) withheld until 8:45:00 AM if unconfirmed</span>
+        </div>
+      `;
+    } else if (itemId === 'item-2') {
+      title.textContent = 'Cardiology Logistics Dispatch Log';
+      subtitle.textContent = 'St. Jude Pavilion Logistics #APPT-4029';
+      body.innerHTML = `
+        <div class="p-3 rounded-xl bg-surface">
+          <span class="font-label-sm text-label-sm text-outline block font-bold">Transit Escort</span>
+          <span class="font-bold text-on-surface">Confirmed: Sarah Vance personal vehicle</span>
+        </div>
+        <div class="p-3 rounded-xl bg-surface">
+          <span class="font-label-sm text-label-sm text-outline block font-bold">Fasting Guidance</span>
+          <span class="text-secondary font-bold">Patient Eleanor Vance: 4hr liquid-only fasting protocol</span>
+        </div>
+      `;
+    } else {
+      title.textContent = 'CareHub Device Telemetry & Sensors';
+      subtitle.textContent = 'BLE Sensor Node #CHUB-8821';
+      body.innerHTML = `
+        <div class="p-3 rounded-xl bg-surface">
+          <span class="font-label-sm text-label-sm text-outline block font-bold">Chamber Sensor Status</span>
+          <span class="font-bold text-on-surface">Chamber 4: 5 doses remaining (Atorvastatin 20mg)</span>
+        </div>
+      `;
+    }
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function confirmDoseModal(medName, btn) {
+    document.getElementById('modal-med-name').textContent = medName;
+    document.getElementById('dose-confirm-modal').classList.remove('hidden');
+  }
+
+  function triggerVoicePromptModal(medName) {
+    document.getElementById('voice-prompt-modal').classList.remove('hidden');
+  }
+
+  function executeDoseConfirmed() {
+    closeModal('dose-confirm-modal');
+    showToast('Lisinopril 10mg verified taken. Tier 1 alert resolved.');
+    // Visually mark card 1 as confirmed
+    const card1 = document.querySelector('article[data-priority="high"]');
+    if (card1) {
+      card1.setAttribute('data-read', 'true');
+      card1.classList.add('opacity-75');
+      const dot = card1.querySelector('.bg-error');
+      if (dot) dot.classList.replace('bg-error', 'bg-secondary');
+    }
+    updateUnreadCounter();
+  }
+
+  function executeVoicePromptSent() {
+    closeModal('voice-prompt-modal');
+    showToast('Gentle audio prompt transmitted to Eleanor’s bedside CareHub.');
+  }
+
+  function markCardAsRead(btn) {
+    const card = btn.closest('.notification-card');
+    if (card) {
+      card.setAttribute('data-read', 'true');
+      card.classList.add('opacity-75');
+      const redDot = card.querySelector('.bg-error');
+      if (redDot) redDot.classList.replace('bg-error', 'bg-surface-variant');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span class="hidden sm:inline">Checked</span>';
+      btn.disabled = true;
+      showToast('Alert acknowledged and marked as checked.');
+      updateUnreadCounter();
+    }
+  }
+
+  function updateUnreadCounter() {
+    const unreadCards = document.querySelectorAll('.notification-card[data-read="false"]');
+    const count = unreadCards.length;
+    const kpiCount = document.getElementById('kpi-unread-count');
+    const tabBadge = document.getElementById('badge-unread-tab');
+    if (kpiCount) kpiCount.textContent = count;
+    if (tabBadge) tabBadge.textContent = count;
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+    if (toast && toastText) {
+      toastText.textContent = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3500);
+    }
+  }
+
+  function playAudioTestDemo() {
+    showToast('Playing sample: Warm wooden acoustic chime with soft tone.');
+  }
+
+  function openDispatchOverrideModal() {
+    if (confirm('MANUAL ESCALATION OVERRIDE:\n\nTrigger an immediate priority call check to Sarah Vance and dispatch alert to Elena Rostova RN?')) {
+      showToast('Manual caregiver alert initiated.');
+    }
+  }
+
+  // Mark all read button
+  const markAllBtn = document.getElementById('mark-all-read-btn');
+  if (markAllBtn) {
+    markAllBtn.addEventListener('click', () => {
+      cards.forEach(card => {
+        card.setAttribute('data-read', 'true');
+        card.classList.add('opacity-75');
+      });
+      updateUnreadCounter();
+      showToast('All notifications marked as read.');
+    });
+  }
+
+  const exportBtn = document.getElementById('export-log-btn');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      showToast('Exporting HIPAA compliant incident audit log (CSV/PDF)...');
+    });
+  }
+
+  const policyBtn = document.getElementById('open-escalation-policy-btn');
+  if (policyBtn) {
+    policyBtn.addEventListener('click', () => {
+      document.getElementById('policy-drawer').classList.remove('translate-x-full');
+    });
+  }
+</script></main></div></body></html>

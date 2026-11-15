@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#e8fef5", "surface-container-low": "#e2f9ef", "secondary": "#006b54", "tertiary-fixed": "#e1e0ff", "on-error-container": "#93000a", "on-surface-variant": "#3e4944", "on-tertiary-fixed-variant": "#2f2ebe", "on-primary-fixed-variant": "#00513f", "on-secondary-container": "#007259", "primary-fixed-dim": "#81d7ba", "inverse-surface": "#21342e", "background": "#e8fef5", "surface-dim": "#c9dfd6", "on-primary-fixed": "#002118", "on-primary": "#ffffff", "primary": "#005b47", "primary-container": "#13755d", "on-primary-container": "#a1f8da", "secondary-container": "#87f7d2", "on-tertiary-container": "#e7e5ff", "on-tertiary-fixed": "#07006c", "surface-container-highest": "#d1e7de", "on-background": "#0c1f1a", "surface-container-lowest": "#ffffff", "tertiary-container": "#5355e0", "outline-variant": "#bec9c3", "on-surface": "#0c1f1a", "on-secondary": "#ffffff", "secondary-fixed": "#87f7d2", "surface-variant": "#d1e7de", "outline": "#6e7a74", "primary-fixed": "#9df3d5", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#00513f", "tertiary-fixed-dim": "#c0c1ff", "surface": "#e8fef5", "secondary-fixed-dim": "#6adab7", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container": "#ddf3ea", "on-error": "#ffffff", "surface-tint": "#006b54", "inverse-primary": "#81d7ba", "inverse-on-surface": "#e0f6ed", "on-secondary-fixed": "#002118", "tertiary": "#3939c7", "surface-container-high": "#d7ede4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "display-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Manrope"], "body-lg": ["Manrope"], "label-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg": ["Plus Jakarta Sans"], "body-xl": ["Manrope"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Manrope"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "600" }], "display-lg": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-xl": ["1.25rem", { "lineHeight": "2rem", "fontWeight": "500" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "500" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-y-auto"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CareCircle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCqnBunvK5NKjhycGIk6O5uA6VEC7HW7mUGUKELn6ucGe3dICz9-OfDE6lc4gjjgw8HcDUBUPEHpjtjlm9MWUvq_BuVJskW64mj7prsgwbJbp7V8cExXxt8mneAnceDyFb3_pbNz7EsqeZ37TQeVPrqLGCr6oxpBROle8j6LGdjvdr3DMt9GJX_NhU1iKwa_Jqw7Gh7Btu3VpIPCDUrYE9ptZcdgA5J9YpEYaYYxLvIbQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight leading-none">CareCircle</span><span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase mt-1">Connected Care</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0 animate-pulse"></span><div class="truncate"><p class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Eleanor Vance, 78</p><p class="font-label-sm text-label-sm text-on-surface-variant truncate">Patient ID #CC-8842</p></div></div><button aria-label="Switch elderly care profile" class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">unfold_more</span></button></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_rgba(15,90,71,0.04)]"><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Main</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="overview" href="#"><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medications" href="#"><span class="font-label-md text-label-md">Medications</span><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">6 Active</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="medication-schedule" href="#"><span class="font-label-md text-label-md">Medication Schedule</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="font-label-md text-label-md">Appointments</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Collaboration</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="carecircle-members" href="#"><span class="font-label-md text-label-md">CareCircle Members</span><span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">4</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="carecircle-notification-center-smart-escalation" href="#"><span class="font-label-md text-label-md">Notification Center</span><span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full">3</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="activity-history" href="#"><span class="font-label-md text-label-md">Activity History</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Intelligence &amp; Health</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="health-insights" href="#"><span class="font-label-md text-label-md">Health Insights</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_rgba(15,90,71,0.04)]" data-path="ai-care-assistant" href="#"><span class="font-label-md text-label-md">AI Care Assistant</span><span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">AI</span></a></div><div class="space-y-1"><p class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">System</p><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="integrations" href="#"><span class="font-label-md text-label-md">Integrations</span></a><a class="flex items-center justify-between px-space-sm py-space-sm min-h-[48px] rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings-and-accessibility" href="#"><span class="font-label-md text-label-md">Settings &amp; Accessibility</span></a></div></nav><div class="p-space-md bg-surface-container-lowest"><button class="w-full min-h-[48px] bg-error text-on-error font-label-md text-label-md px-space-md py-space-sm rounded-xl flex items-center justify-center gap-space-xs shadow-[0_4px_16px_-2px_rgba(15,90,71,0.08)] hover:opacity-95 transition-opacity" type="button"><span class="material-symbols-outlined text-[20px]">emergency</span><span>Emergency Quick-Call</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="w-full relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[22px]">search</span><input class="w-full h-[52px] pl-12 pr-16 bg-surface rounded-xl text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search medications, doctors, logs... ⌘K" type="text"/><kbd class="absolute right-space-md font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2 py-1 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-md py-2 rounded-full"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Sarah Vance (Daughter)</span><span class="text-outline text-xs">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Passcode Protected</span></div><div class="flex items-center gap-1 bg-surface rounded-lg p-1"><button class="min-h-[48px] px-3 flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold rounded" title="Change language" type="button"><span class="material-symbols-outlined text-[18px]">translate</span><span>EN</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><button class="min-h-[48px] min-w-[48px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded" title="Toggle larger accessible text" type="button"><span class="material-symbols-outlined text-[20px]">format_size</span></button></div><button aria-label="View notifications" class="relative min-h-[48px] min-w-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-5 h-5 bg-error text-on-error font-label-sm text-label-sm rounded-full flex items-center justify-center leading-none font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPyBdl8IKVXaOxmjMYXkmR8B_SvBN9GyoXb64KlfVpmAesnM6kXf4MJRxVm10yABpjH-cRq2ebYiMTYR0U8WzXUriv0hLGoc0amBWy_RMNPELDfJPL4Betn6h_VU0WINDNy071P0cHoc_FsW4HvPVrqLGvjukWBKNwPVvgliaZQasmMJr5ss3sJopDMBLSoR0Y5CoHKeghpjhIcg3JLhuobmk8pqLcPHoxKll2NCYo"/><div class="hidden 2xl:block text-left"><p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Sarah Vance</p><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Primary Caretaker</p></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-surface px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Strategic Staging Banner -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Breadcrumb & Status Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Intelligence &amp; Health</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-semibold text-primary">AI Care Assistant</span>
+</nav>
+<!-- Badge for Sandboxed Testnet State -->
+<div class="flex items-center gap-space-xs bg-surface-container-high px-3 py-1.5 rounded-full shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wide uppercase">Gemini-Ready Model Architecture (Staging Testnet)</span>
+<span class="font-label-sm text-label-sm text-outline px-1">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sandboxed Data Engine CC-8842</span>
+</div>
+</div>
+<!-- Title & Top Operation Controls -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pt-space-xs">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">AI Care Assistant &amp; Routine Intelligence</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Empathetic caregiver copilot synthesizing Eleanor Vance's dispenser telemetry, clinic dates, and grace intervals.</p>
+</div>
+<!-- Action Button Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="min-h-[48px] px-space-md bg-surface-container-lowest text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded-xl font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center gap-2" id="btn-clear-chat" type="button">
+<span class="material-symbols-outlined text-[20px]">delete_sweep</span>
+<span>Clear Conversation</span>
+</button>
+<button class="min-h-[48px] px-space-md bg-surface-container-lowest text-primary hover:bg-surface-container rounded-xl font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center gap-2" id="btn-export-pdf" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+<span>Export Transcript (PDF)</span>
+</button>
+<button class="min-h-[48px] px-space-md bg-surface-container-high text-primary hover:bg-secondary-fixed/40 rounded-xl font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center gap-2" id="btn-guardrail-toggle" type="button">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+<span>Safety &amp; Guardrails</span>
+</button>
+</div>
+</div>
+<!-- State Switcher Playground Bar (For UX Evaluation) -->
+<div class="mt-space-xs bg-surface-container-low p-space-sm rounded-xl flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">Engine State Simulation:</span>
+</div>
+<div aria-label="Simulation state selector" class="flex flex-wrap items-center gap-1.5" role="tablist">
+<button class="state-btn min-h-[48px] px-3.5 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold transition-all bg-primary-container text-on-primary shadow-sm" data-state="active" id="state-tab-1" type="button">
+          1. Active Routine Analysis
+        </button>
+<button class="state-btn min-h-[48px] px-3.5 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container" data-state="generating" id="state-tab-2" type="button">
+          2. Generating / Thinking
+        </button>
+<button class="state-btn min-h-[48px] px-3.5 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container" data-state="error" id="state-tab-3" type="button">
+          3. Staging Disconnect / Retry
+        </button>
+<button class="state-btn min-h-[48px] px-3.5 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container" data-state="empty" id="state-tab-4" type="button">
+          4. Zero / Empty State
+        </button>
+</div>
+</div>
+</div>
+<!-- Operational 3-Column Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- ========================================== -->
+<!-- COLUMN A: Session Drawer (3 cols / ~280px) -->
+<!-- ========================================== -->
+<aside class="lg:col-span-3 flex flex-col gap-space-md order-2 lg:order-1">
+<!-- New Session Action -->
+<button class="w-full min-h-[52px] bg-primary text-on-primary rounded-xl font-label-lg text-label-lg font-bold shadow-md hover:bg-primary-container active:scale-[0.98] transition-all flex items-center justify-center gap-space-xs" id="btn-new-chat" type="button">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+<span>+ New Healthcare Conversation</span>
+</button>
+<!-- Session History Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">forum</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Sessions</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full font-bold">4 Logs</span>
+</div>
+<!-- Categorized Session List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Category: Today -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline px-1">Today</span>
+<button class="session-item text-left p-space-sm rounded-xl bg-surface-container-low transition-all shadow-sm flex items-start gap-space-xs group" type="button">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 group-hover:scale-110 transition-transform">medical_services</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md font-bold text-primary truncate">Morning Meds &amp; Fasting Adherence</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-secondary font-semibold">Active Session</span>
+<span>•</span>
+<span>10:15 AM</span>
+</div>
+</div>
+</button>
+</div>
+<!-- Category: Yesterday -->
+<div class="flex flex-col gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline px-1">Yesterday</span>
+<button class="session-item text-left p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all flex items-start gap-space-xs group" type="button">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5 group-hover:text-primary transition-colors">calendar_month</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md font-semibold text-on-surface truncate">Cardiology Logistics (Dr. Chen)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Prep for transit fasting instructions</p>
+</div>
+</button>
+</div>
+<!-- Category: Earlier This Week -->
+<div class="flex flex-col gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline px-1">Past Sessions</span>
+<button class="session-item text-left p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all flex items-start gap-space-xs group" type="button">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5 group-hover:text-primary transition-colors">timelapse</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md font-semibold text-on-surface truncate">Weekly Adherence &amp; Grace Periods</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Oct 22 • 91% Adherence analysis</p>
+</div>
+</button>
+<button class="session-item text-left p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all flex items-start gap-space-xs group" type="button">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5 group-hover:text-primary transition-colors">prescriptions</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md font-semibold text-on-surface truncate">Metformin GI Tolerance Review</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Oct 18 • Dinner timing adjustment</p>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Scoped Persona Indicator Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Scoped Persona Security</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Sarah Vance (Healthcare Proxy)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Authorized for <span class="font-semibold text-on-surface">Tier 1 &amp; Tier 2 CareCircle Telemetry</span>. Dispenser triggers &amp; clinic communication proxy active under legal POA #POA-9912.
+        </p>
+</div>
+<!-- Storage & Privacy Footnote -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0 mt-0.5">lock_person</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">HIPAA Zero-Retention</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Personal health telemetry remains encrypted at rest within Eleanor's sovereign vault. No public model training.
+          </p>
+</div>
+</div>
+</aside>
+<!-- ========================================== -->
+<!-- COLUMN B: Center Chat Engine (6 cols / Fluid) -->
+<!-- ========================================== -->
+<section class="lg:col-span-6 flex flex-col gap-space-md order-1 lg:order-2">
+<!-- Persistent Safety Doctrine Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Clinical Safety Protocol &amp; Zero-Panic Doctrine</h3>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">Doctrine v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+              CareAssistant synthesizes authorized telemetry, schedules, and clinical logs. It <span class="font-bold text-on-surface">NEVER diagnoses conditions, prescribes medication, adjusts dosages, or recommends taking an extra missed dose</span>. Any protocol change mandates explicit human authorization from Eleanor Vance or her attending physician.
+            </p>
+</div>
+</div>
+</div>
+<!-- Quick Ask Suggestion Chips -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">Caregiver Inquiries</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tap to ask</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="quick-chip min-h-[48px] px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">pill</span>
+<span>What medicines are scheduled for today?</span>
+</button>
+<button class="quick-chip min-h-[48px] px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">monitoring</span>
+<span>Summarize this week's adherence</span>
+</button>
+<button class="quick-chip min-h-[48px] px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px] group-hover:scale-110 transition-transform">hourglass_top</span>
+<span>Which doses remain unconfirmed?</span>
+</button>
+<button class="quick-chip min-h-[48px] px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium shadow-sm transition-all flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">event_upcoming</span>
+<span>What appointments are coming up?</span>
+</button>
+</div>
+</div>
+<!-- Conversational Dynamic Stream Container -->
+<div class="flex flex-col gap-space-lg min-h-[480px]" id="chat-thread-container">
+<!-- ======================= -->
+<!-- STATE 1: ACTIVE STREAM  -->
+<!-- ======================= -->
+<div class="flex flex-col gap-space-lg" id="state-view-active">
+<!-- Turn 1: User Sarah Vance -->
+<div class="flex items-start justify-end gap-space-sm pl-8">
+<div class="flex flex-col items-end max-w-xl">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Sarah Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:14 AM</span>
+</div>
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-sm p-space-md shadow-md">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Can you give me a summary of Eleanor's medication adherence and today's schedule? Also flag anything that needs my attention right now.
+                </p>
+</div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">done_all</span>
+<span>Verified Proxy Input</span>
+</div>
+</div>
+<img class="w-10 h-10 rounded-full object-cover shadow-sm ring-2 ring-primary-fixed flex-shrink-0" data-alt="Portrait photo of Sarah Vance, a warm compassionate 48-year-old daughter and primary caregiver wearing green botanical knitwear in soft morning daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmnzkvLgUxy2979qY-R9Dpv1y0FaUFneVQvG9D7Q5SXnI25RqkY2o6VtwvSOihlaATy0TYWH5P7g_FhwM1yn4TePKqgCyVfUVbboFeTgPdD2n_vUPmHDffly6FWv7mWeVGor8ODjG_m0iEPu-8Gno7xdT2GSo4pqLy0xoVKXMJTP49kZBAkehsxr4RK2R_B-AYMzwuzXuVe9tLHLcBjPNobh6TucyKv4FCqzPC4X8c"/>
+</div>
+<!-- Turn 2: AI Care Assistant Response -->
+<div class="flex items-start gap-space-sm pr-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0 shadow-md text-on-tertiary">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div class="flex-1 flex flex-col gap-space-md max-w-2xl">
+<!-- Assistant Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-primary">CareCircle Routine Intelligence</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">Staging Sandboxed</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:15 AM (Synced 4m ago)</span>
+</div>
+<!-- Main Assistant Message Card -->
+<div class="bg-surface-container-lowest rounded-2xl rounded-tl-sm p-space-lg shadow-md flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                  Good morning, Sarah. Here is the verified routine summary for <span class="font-bold text-primary">Eleanor Vance (Age 78)</span> based on CareHub automated dispenser telemetry and electronic clinic logs as of 10:15 AM today:
+                </p>
+<!-- Section: Weekly Adherence Overview -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Weekly Adherence Overview</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">86% On-Time Adherence</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Your weekly medication report shows <span class="font-bold text-on-surface">18 of 21 scheduled doses confirmed</span>, 2 recorded as clinically planned skips per Dr. Chen's note, and 1 currently pending in active grace period.
+                  </p>
+<!-- Adherence Progress Bar -->
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden mt-1 flex">
+<div class="bg-primary h-full" style="width: 86%" title="86% Confirmed"></div>
+<div class="bg-secondary-fixed h-full" style="width: 9.5%" title="Skipped per Guidance"></div>
+<div class="bg-outline h-full" style="width: 4.5%" title="Grace Active"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span>18 Confirmed</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-fixed inline-block"></span>2 Planned Skips</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-outline inline-block"></span>1 Pending Grace</span>
+</div>
+</div>
+<!-- Section: Today's Schedule & Actionable Items -->
+<div class="flex flex-col gap-space-xs">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Today's Schedule &amp; Attention Flags</h4>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">schedule</span>
+<div>
+<strong class="text-on-surface font-semibold">1. Lisinopril 10mg (Morning Dose - 8:00 AM):</strong> Currently in gentle 45-minute grace window. Telemetry shows CareHub chimed at 8:00 AM; optical tray sensor awaits Eleanor's pickup.
+                      </div>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">dinner_dining</span>
+<div>
+<strong class="text-on-surface font-semibold">2. Metformin 500mg (Evening Dose - 6:00 PM):</strong> Scheduled with dinner. Eleanor logged standard tolerance yesterday.
+                      </div>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">bedtime</span>
+<div>
+<strong class="text-on-surface font-semibold">3. Atorvastatin 20mg (Night Dose - 9:00 PM):</strong> Scheduled at bedtime with chamomile tea.
+                      </div>
+</li>
+</ul>
+</div>
+<!-- EMBEDDED SUPPORTING INTERACTIVE CARDS -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-1">
+<!-- Card 1: Lisinopril Grace Alert -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Telemetry Alert</span>
+<h5 class="font-headline-sm text-headline-sm font-bold text-on-surface">Lisinopril 10mg</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Morning Hypertension Regimen</p>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+                        Grace: 34m Left
+                      </span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sensors</span>
+                        CareHub Chamber #02
+                      </span>
+<span class="text-outline">Optical: Ready</span>
+</div>
+<button class="w-full min-h-[48px] bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>View Dispenser Log</span>
+</button>
+</div>
+<!-- Card 2: Upcoming Clinic Packet -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Clinic Preparation</span>
+<h5 class="font-headline-sm text-headline-sm font-bold text-on-surface">Dr. Robert Chen, MD</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cardiology Routine Follow-up</p>
+</div>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+                        Thu, Oct 26
+                      </span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_car</span>
+                        Transit: Sarah Driving
+                      </span>
+<span class="text-error font-semibold">4h Fasting Required</span>
+</div>
+<button class="w-full min-h-[48px] bg-surface-container-lowest text-primary hover:bg-surface-container font-label-md text-label-md font-semibold rounded-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>View Clinic Packet</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Source Attribution Footer -->
+<div class="pt-2">
+<button class="w-full flex items-center justify-between text-on-surface-variant hover:text-primary font-label-sm text-label-sm py-1 transition-colors" id="btn-toggle-sources" type="button">
+<span class="flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+                      Sources Verified (3 cryptographic streams)
+                    </span>
+<span class="material-symbols-outlined text-[18px] transition-transform" id="sources-arrow">expand_more</span>
+</button>
+<div class="hidden mt-2 p-space-sm bg-surface-container rounded-xl text-on-surface-variant font-body-sm text-body-sm space-y-1" id="sources-detail-block">
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span><strong>CareHub Dispenser Telemetry #CC-8842:</strong> Ping received 4m ago (Optical tray sensor online, WiFi RSSI -58dBm).</span>
+</p>
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span><strong>EHR Clinical Feed via HL7 St. Jude Cardiology:</strong> Sync 14m ago (Appointment confirmation ID #HL7-88219).</span>
+</p>
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span><strong>Zero-Panic Governance Engine v2.4:</strong> Strict non-prescriptive filter passed with zero dosage adjustments.</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Assistant Message Micro-Actions -->
+<div class="flex items-center gap-space-sm pl-2">
+<button class="min-h-[48px] px-3 text-on-surface-variant hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" title="Copy response to clipboard" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span>Copy</span>
+</button>
+<button class="min-h-[48px] px-3 text-on-surface-variant hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" title="Helpful answer" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span>Helpful</span>
+</button>
+<button class="min-h-[48px] px-3 text-on-surface-variant hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" title="Report inaccuracy" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span>Flag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 2: GENERATING / THINKING LOADER VIEW      -->
+<!-- ============================================== -->
+<div class="hidden flex-col gap-space-lg" id="state-view-generating">
+<!-- Sarah's simulated prompt -->
+<div class="flex items-start justify-end gap-space-sm pl-8">
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-sm p-space-md shadow-md max-w-lg">
+<p class="font-body-md text-body-md">Can you check Eleanor's water intake logs ahead of her Thursday cardiology fast?</p>
+</div>
+</div>
+<!-- Thinking card -->
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0 text-on-tertiary">
+<span class="material-symbols-outlined text-[22px] animate-spin">cyclone</span>
+</div>
+<div class="flex-1 bg-surface-container-lowest rounded-2xl p-space-lg shadow-md max-w-xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+<span>Synthesizing CareHub Sensor Telemetry &amp; Dr. Chen EHR Feeds...</span>
+</div>
+<div class="flex items-center gap-2 py-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-bounce"></span>
+<span class="w-3 h-3 rounded-full bg-primary animate-bounce [animation-delay:0.2s]"></span>
+<span class="w-3 h-3 rounded-full bg-primary animate-bounce [animation-delay:0.4s]"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant pl-2">Consulting Zero-Panic clinical boundaries...</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline italic">Checking dispenser chamber 02 logs, last optical weight sync, and caregiver calendar notes.</p>
+</div>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 3: API DISCONNECT / RETRY VIEW           -->
+<!-- ============================================== -->
+<div class="hidden flex-col items-center justify-center py-space-xl px-space-md text-center bg-surface-container-lowest rounded-2xl shadow-md" id="state-view-error">
+<div class="w-16 h-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[36px]">cloud_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Staging Engine Disconnected</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1 mb-space-md">
+            The Sandboxed Gemini Staging Endpoint timed out while querying CareHub Chamber #02. Eleanor's physical dispenser operates autonomously on local battery backup.
+          </p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm">
+<button class="min-h-[48px] px-space-lg bg-primary text-on-primary rounded-xl font-label-md text-label-md font-bold shadow-md hover:bg-primary-container transition-all flex items-center gap-2" id="btn-retry-engine" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>Retry Telemetry Connection</span>
+</button>
+<button class="min-h-[48px] px-space-md bg-surface-container-high text-primary rounded-xl font-label-md text-label-md font-semibold hover:bg-surface-container transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span>Manual Bedside Caregiver Line</span>
+</button>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 4: ZERO / EMPTY STATE VIEW               -->
+<!-- ============================================== -->
+<div class="hidden flex-col items-center justify-center py-space-xl px-space-md text-center bg-surface-container-lowest rounded-2xl shadow-md" id="state-view-empty">
+<div class="w-16 h-16 rounded-full bg-surface-container-high text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[36px]">chat_bubble_outline</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">No Active Conversation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1 mb-space-md">
+            Ask any question about Eleanor's medication schedules, dispenser grace extensions, upcoming cardiology appointments, or weekly compliance.
+          </p>
+<div class="flex flex-wrap items-center justify-center gap-2 max-w-lg">
+<button class="quick-chip min-h-[48px] px-3.5 py-1.5 rounded-full bg-surface-container-low text-primary font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" type="button">
+              "Show my mother's healthcare routine summary"
+            </button>
+<button class="quick-chip min-h-[48px] px-3.5 py-1.5 rounded-full bg-surface-container-low text-primary font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" type="button">
+              "What reminders had grace window extensions?"
+            </button>
+</div>
+</div>
+</div>
+<!-- Accessible Interactive Message Input Box -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-md flex flex-col gap-space-sm sticky bottom-2 z-10">
+<!-- Input Textarea & Attachments -->
+<div class="relative flex items-center">
+<textarea class="w-full p-space-md pr-32 bg-surface rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary resize-none" id="chat-input-textarea" placeholder="Ask about Eleanor's routines, dispenser alarms, or Dr. Chen's cardiology appointment..." rows="2"></textarea>
+<!-- Embedded Input Actions (Mic & Upload) -->
+<div class="absolute right-3 top-3 flex items-center gap-1">
+<button aria-label="Use voice dictation" class="min-h-[48px] min-w-[48px] rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors flex items-center justify-center" id="btn-mic" title="Voice Input (Senior friendly dictation)" type="button">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</button>
+<button aria-label="Attach prescription or lab report" class="min-h-[48px] min-w-[48px] rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors flex items-center justify-center" title="Attach EHR document" type="button">
+<span class="material-symbols-outlined text-[22px]">attach_file</span>
+</button>
+</div>
+</div>
+<!-- Input Footer & Send Action -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Zero-Retention HIPAA Staging • Press <kbd class="px-1.5 py-0.5 bg-surface-container rounded font-bold">↵ Enter</kbd> to query</span>
+</div>
+<button class="min-h-[48px] px-space-lg bg-primary hover:bg-primary-container active:scale-[0.98] text-on-primary font-label-md text-label-md font-bold rounded-xl shadow-md transition-all flex items-center gap-2" id="btn-send-message" type="button">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- COLUMN C: Right Clinical Context (3 cols / ~320px) -->
+<!-- ========================================== -->
+<aside class="lg:col-span-3 flex flex-col gap-space-md order-3">
+<!-- Right Header -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">clinical_notes</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Routine Insights</h2>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-full text-secondary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Live Sync</span>
+</div>
+</div>
+<!-- Section 1: Weekly Adherence Pulse -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">Weekly Adherence Pulse</h3>
+<span class="font-label-sm text-label-sm text-primary font-bold">Oct 19 - Oct 25</span>
+</div>
+<!-- Metric Pulse Dial / Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md">
+<!-- Inline Radial SVG Chart -->
+<div class="relative w-20 h-20 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="86, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center leading-none">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">86%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">On-Time</span>
+</div>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Target Met (&gt;80%)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Eleanor holds a steady 7-day routine cadence.</p>
+</div>
+</div>
+<!-- Breakdown List -->
+<div class="space-y-2 pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between p-1.5 bg-surface rounded-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary"></span>Confirmed Taken</span>
+<span class="font-bold text-on-surface">18 doses</span>
+</div>
+<div class="flex items-center justify-between p-1.5 bg-surface rounded-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Planned Clinical Skips</span>
+<span class="font-bold text-on-surface">2 doses</span>
+</div>
+<div class="flex items-center justify-between p-1.5 bg-surface rounded-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>In Grace Extension</span>
+<span class="font-bold text-secondary">1 dose</span>
+</div>
+<div class="flex items-center justify-between p-1.5 bg-surface rounded-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-outline"></span>Unsafe Double-Doses</span>
+<span class="font-bold text-primary">0 (Protected)</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Unconfirmed Medication Attention -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+<h3 class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Unconfirmed Attention</h3>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold animate-pulse">11m Alert</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Lisinopril 10mg</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">8:00 AM Slot</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Countdown: <span class="font-bold text-secondary">11 mins</span> until automatic Tier 1 Caregiver SMS escalation is dispatched to Sarah.
+          </p>
+<!-- Quick Action Buttons -->
+<div class="flex flex-col gap-1.5 pt-2">
+<button class="min-h-[48px] px-3 bg-primary-container text-on-primary hover:bg-primary font-label-sm text-label-sm font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm" id="btn-chime-dispenser" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span>Send Bedside Audio Chime</span>
+</button>
+<button class="min-h-[48px] px-3 bg-surface-container-lowest text-primary hover:bg-surface-container font-label-sm text-label-sm font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm" id="btn-confirm-taken" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Mark Confirmed Taken</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 3: Routine Improvement Suggestions -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+<h3 class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Routine Observations</h3>
+</div>
+<!-- Suggestion 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Evening Tea Alignment</span>
+<span class="text-[10px] uppercase font-bold text-outline">Lifestyle Only</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Eleanor took Atorvastatin 20 mins earlier on nights she prepared chamomile tea. Moving the bedside reminder to <span class="font-bold text-on-surface">8:40 PM</span> may naturally smooth her bedtime routine.
+          </p>
+<span class="font-label-sm text-label-sm text-outline italic">Lifestyle Observation — Not Medical Advice</span>
+</div>
+<!-- Suggestion 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Hydration Pre-Clinic</span>
+<span class="text-[10px] uppercase font-bold text-outline">Clinic Prep</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Dr. Chen's fasting guidelines permit water intake. Encourage Eleanor to sip warm water prior to 7:00 AM on Thursday to keep vitals optimal.
+          </p>
+</div>
+</div>
+<!-- Section 4: Safety & Governance Summary -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<h3 class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline mb-1">Safety &amp; Governance Ledger</h3>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm py-1">
+<span class="text-on-surface-variant">Authorized Proxy:</span>
+<span class="font-bold">Sarah Vance (Daughter)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm py-1">
+<span class="text-on-surface-variant">Emergency Escalation:</span>
+<span class="font-bold text-secondary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Twilio Gateway Ready
+          </span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm py-1">
+<span class="text-on-surface-variant">Elder Consent Flag:</span>
+<span class="font-bold text-primary">Sovereign Active</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-body-sm text-body-sm py-1">
+<span class="text-on-surface-variant">Audit Vault ID:</span>
+<span class="font-mono text-outline font-medium">#LOG-CC-8842-V4</span>
+</div>
+</div>
+</aside>
+</div>
+<!-- Safety & Guardrail Rules Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="safety-modal">
+<div class="bg-surface-container-lowest max-w-xl w-full rounded-2xl p-space-xl shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[28px]">shield_with_heart</span>
+<h3 class="font-headline-md text-headline-md font-bold text-primary">AI Clinical Safety Protocol</h3>
+</div>
+<button class="min-h-[48px] min-w-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" id="btn-close-modal" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm text-body-sm text-body-sm text-on-surface-variant">
+<p class="leading-relaxed">
+          The CareCircle AI Care Assistant operates strictly within safe caregiver support boundaries. All telemetry processing follows the <strong>Zero-Panic Senior Health Doctrine v2.4</strong>.
+        </p>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2">
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span><strong>What the Assistant DOES:</strong> Summarizes sensor telemetry, confirms medication dispenser alarms, maps clinic appointment calendars, and notifies designated proxies.</span>
+</div>
+<div class="flex items-start gap-2 text-error">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+<span><strong>What the Assistant NEVER does:</strong> Does NOT alter prescription doses, never suggests taking an additional pill for a missed dose, and never provides clinical diagnoses.</span>
+</div>
+</div>
+<p class="text-outline text-xs">
+          Staging Sandbox Engine: CC-8842. Eleanor Vance retains sovereign control. In emergency events, immediate physical dispatch occurs through local EMS 911 conduits.
+        </p>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="min-h-[48px] px-space-lg bg-primary text-on-primary rounded-xl font-label-md text-label-md font-bold hover:bg-primary-container transition-all" id="btn-modal-understand" type="button">
+          I Understand &amp; Acknowledge
+        </button>
+</div>
+</div>
+</div>
+<!-- Accessible Toast Notification for Interactive Feedback -->
+<div class="fixed bottom-6 right-6 z-50 hidden bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md rounded-xl shadow-xl items-center gap-space-sm font-label-md text-label-md transition-all" id="toast-banner">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]" id="toast-icon">check_circle</span>
+<span id="toast-message">Dispenser chime sent to Eleanor's bedside CareHub.</span>
+</div>
+</div>
+<!-- Client-side Interactive Experience Controller -->
+<script>
+  (function initAICareAssistant() {
+    // 1. State Switcher Logic
+    const stateButtons = document.querySelectorAll('.state-btn');
+    const views = {
+      active: document.getElementById('state-view-active'),
+      generating: document.getElementById('state-view-generating'),
+      error: document.getElementById('state-view-error'),
+      empty: document.getElementById('state-view-empty')
+    };
+
+    function switchState(targetState) {
+      // Toggle button styles
+      stateButtons.forEach(btn => {
+        const isActive = btn.getAttribute('data-state') === targetState;
+        if (isActive) {
+          btn.className = 'state-btn min-h-[48px] px-3.5 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold transition-all bg-primary-container text-on-primary shadow-sm';
+        } else {
+          btn.className = 'state-btn min-h-[48px] px-3.5 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container';
+        }
+      });
+
+      // Toggle views
+      Object.keys(views).forEach(key => {
+        if (views[key]) {
+          if (key === targetState) {
+            views[key].classList.remove('hidden');
+            views[key].classList.add('flex');
+          } else {
+            views[key].classList.add('hidden');
+            views[key].classList.remove('flex');
+          }
+        }
+      });
+    }
+
+    stateButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const st = btn.getAttribute('data-state');
+        switchState(st);
+      });
+    });
+
+    // 2. Collapsible Source Attribution
+    const toggleSourcesBtn = document.getElementById('btn-toggle-sources');
+    const sourcesDetail = document.getElementById('sources-detail-block');
+    const sourcesArrow = document.getElementById('sources-arrow');
+
+    if (toggleSourcesBtn && sourcesDetail && sourcesArrow) {
+      toggleSourcesBtn.addEventListener('click', () => {
+        const isHidden = sourcesDetail.classList.contains('hidden');
+        if (isHidden) {
+          sourcesDetail.classList.remove('hidden');
+          sourcesArrow.textContent = 'expand_less';
+        } else {
+          sourcesDetail.classList.add('hidden');
+          sourcesArrow.textContent = 'expand_more';
+        }
+      });
+    }
+
+    // 3. Quick-Ask Chip Click-to-Populate
+    const chatInput = document.getElementById('chat-input-textarea');
+    const quickChips = document.querySelectorAll('.quick-chip');
+
+    quickChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const promptText = chip.textContent.trim().replace(/^"/, '').replace(/"$/, '');
+        if (chatInput) {
+          chatInput.value = promptText;
+          chatInput.focus();
+        }
+      });
+    });
+
+    // 4. Modal Safety Guardrail Toggle
+    const modal = document.getElementById('safety-modal');
+    const openModalBtn = document.getElementById('btn-guardrail-toggle');
+    const closeModalBtn = document.getElementById('btn-close-modal');
+    const ackModalBtn = document.getElementById('btn-modal-understand');
+
+    function toggleModal(open) {
+      if (!modal) return;
+      if (open) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    if (openModalBtn) openModalBtn.addEventListener('click', () => toggleModal(true));
+    if (closeModalBtn) closeModalBtn.addEventListener('click', () => toggleModal(false));
+    if (ackModalBtn) ackModalBtn.addEventListener('click', () => toggleModal(false));
+
+    // 5. Toast Feedback Helper
+    const toast = document.getElementById('toast-banner');
+    const toastMessage = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+    let toastTimeout;
+
+    function showToast(msg, iconName = 'check_circle') {
+      if (!toast) return;
+      if (toastMessage) toastMessage.textContent = msg;
+      if (toastIcon) toastIcon.textContent = iconName;
+      
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 4000);
+    }
+
+    // Bedside Action Feedback
+    const chimeBtn = document.getElementById('btn-chime-dispenser');
+    if (chimeBtn) {
+      chimeBtn.addEventListener('click', () => {
+        showToast('Gentle audio chime broadcasted to Eleanor\'s CareHub dispenser.', 'volume_up');
+      });
+    }
+
+    const confirmTakenBtn = document.getElementById('btn-confirm-taken');
+    if (confirmTakenBtn) {
+      confirmTakenBtn.addEventListener('click', () => {
+        showToast('Lisinopril 10mg verified taken by Sarah Vance.', 'verified');
+      });
+    }
+
+    // Retry Button in error view
+    const retryBtn = document.getElementById('btn-retry-engine');
+    if (retryBtn) {
+      retryBtn.addEventListener('click', () => {
+        switchState('generating');
+        setTimeout(() => {
+          switchState('active');
+          showToast('Connection to CareHub telemetry restored.', 'sensors');
+        }, 1500);
+      });
+    }
+
+    // Send Message Interaction
+    const sendBtn = document.getElementById('btn-send-message');
+    if (sendBtn && chatInput) {
+      sendBtn.addEventListener('click', () => {
+        if (!chatInput.value.trim()) return;
+        chatInput.value = '';
+        switchState('generating');
+        setTimeout(() => {
+          switchState('active');
+        }, 1800);
+      });
+
+      chatInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          sendBtn.click();
+        }
+      });
+    }
+
+    // PDF Export & Clear buttons
+    const exportBtn = document.getElementById('btn-export-pdf');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        showToast('Transcript compiled: Patient_CC8842_Telemetry_Report.pdf ready.', 'download');
+      });
+    }
+
+    const clearBtn = document.getElementById('btn-clear-chat');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        switchState('empty');
+        showToast('Session buffer cleared.', 'delete');
+      });
+    }
+
+    const newChatBtn = document.getElementById('btn-new-chat');
+    if (newChatBtn) {
+      newChatBtn.addEventListener('click', () => {
+        switchState('active');
+        if (chatInput) chatInput.focus();
+      });
+    }
+
+    const micBtn = document.getElementById('btn-mic');
+    if (micBtn) {
+      micBtn.addEventListener('click', () => {
+        showToast('Listening for caregiver dictation...', 'mic');
+      });
+    }
+  })();
+</script></main></div></body></html>
