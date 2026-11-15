@@ -323,9 +323,12 @@ function Dashboard({ state, completion, takenCount, onRecord }: { state: ReturnT
   const t = (key: string) => translate(key, state.preference.language);
   const upcoming = [...state.appointments].sort((a, b) => a.date.localeCompare(b.date))[0];
   const todayLabel = formatLongDate().toUpperCase();
+  const hour = new Date().getHours();
+  const greeting = t(hour < 12 ? 'morningGreeting' : hour < 18 ? 'afternoonGreeting' : 'eveningGreeting');
+  const firstName = state.user?.name.split(' ')[0];
 
   return <>
-    <PageHeading eyebrow={todayLabel} title={t('welcome')} description={t('welcomeCopy')} action={<button className="button button-secondary" type="button" onClick={() => window.print()}><Icon>download</Icon>Print overview</button>} />
+    <PageHeading eyebrow={todayLabel} title={firstName ? `${greeting}, ${firstName}` : greeting} description={t('welcomeCopy')} action={<button className="button button-secondary" type="button" onClick={() => window.print()}><Icon>download</Icon>Print overview</button>} />
     <div className="dashboard-grid">
       <Card className="adherence-card">
         <div className="panel-title-row"><div><span className="eyebrow">TODAY’S ROUTINE</span><h2>Recorded dose activity</h2></div><Link className="text-link" to="/app/insights">View insights <span aria-hidden="true">→</span></Link></div>
